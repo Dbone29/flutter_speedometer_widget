@@ -1,7 +1,7 @@
-import 'package:custom_widget_speedometer/imageString.dart';
+import 'package:custom_widget_speedometer/constants.dart';
+import 'package:custom_widget_speedometer/customPaints.dart';
 import 'package:custom_widget_speedometer/speedometer_animation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class speedometer extends StatefulWidget {
   const speedometer({super.key});
@@ -38,6 +38,19 @@ class _speedometerState extends State<speedometer>
   SpeedometerAnimations? _speedometerAnimations10;
   SpeedometerAnimations? _speedometerAnimations11;
 
+  bool _isPlaying = false;
+  bool _isPlaying1 = false;
+  bool _isPlaying2 = false;
+  bool _isPlaying3 = false;
+  bool _isPlaying4 = false;
+  bool _isPlaying5 = false;
+  bool _isPlaying6 = false;
+  bool _isPlaying7 = false;
+  bool _isPlaying8 = false;
+  bool _isPlaying9 = false;
+  bool _isPlaying10 = false;
+  bool _isPlaying11 = false;
+
   @override
   void initState() {
     super.initState();
@@ -45,7 +58,7 @@ class _speedometerState extends State<speedometer>
       vsync: this,
       lowerBound: 0.0,
       upperBound: 1,
-      duration: Duration(seconds: 1),
+      duration: Duration(milliseconds: 1500),
     );
 
     _speedometerAnimations = SpeedometerAnimations(_controller);
@@ -149,25 +162,202 @@ class _speedometerState extends State<speedometer>
     _speedometerAnimations11 = SpeedometerAnimations(_controller11);
   }
 
-  @override
-  void dispose() {
-    _controller.dispose();
-    _controller1.dispose();
-    _controller2.dispose();
-    _controller3.dispose();
-    _controller4.dispose();
-    _controller5.dispose();
-    _controller6.dispose();
-    _controller7.dispose();
-    _controller8.dispose();
-    _controller9.dispose();
-    _controller10.dispose();
-    _controller11.dispose();
-    super.dispose();
-  }
-
   void startAnimation(ctn) {
     ctn.forward(from: 0.0);
+  }
+
+  void _toggleAnimation(choice, ctrl) {
+    switch (choice) {
+      case 1:
+        setState(() {
+          _isPlaying = !_isPlaying;
+          print(_isPlaying);
+        });
+
+        if (_isPlaying) {
+          ctrl.repeat();
+        } else {
+          ctrl.forward(from: 0.0);
+          ctrl.stop();
+        }
+
+        //// Additional Function Call
+
+        break;
+      case 2:
+        setState(() {
+          _isPlaying1 = !_isPlaying1;
+          print(_isPlaying1);
+        });
+
+        if (_isPlaying1) {
+          ctrl.repeat();
+        } else {
+          ctrl.forward(from: 0.0);
+          ctrl.stop();
+        }
+
+        //// Additional Function Call
+
+        break;
+      case 3:
+        setState(() {
+          _isPlaying2 = !_isPlaying2;
+          print(_isPlaying2);
+        });
+
+        if (_isPlaying2) {
+          ctrl.repeat();
+        } else {
+          ctrl.forward(from: 0.0);
+          ctrl.stop();
+        }
+
+        //// Additional Function Call
+
+        break;
+      case 4:
+        setState(() {
+          _isPlaying3 = !_isPlaying3;
+          print(_isPlaying3);
+        });
+
+        if (_isPlaying3) {
+          ctrl.repeat();
+        } else {
+          ctrl.forward(from: 0.0);
+          ctrl.stop();
+        }
+
+        //// Additional Function Call
+
+        break;
+      case 5:
+        setState(() {
+          _isPlaying4 = !_isPlaying4;
+          print(_isPlaying4);
+        });
+
+        if (_isPlaying4) {
+          ctrl.repeat();
+        } else {
+          ctrl.forward(from: 0.0);
+          ctrl.stop();
+        }
+
+        //// Additional Function Call
+
+        break;
+      case 6:
+        setState(() {
+          _isPlaying5 = !_isPlaying5;
+          print(_isPlaying5);
+        });
+
+        if (_isPlaying5) {
+          ctrl.repeat();
+        } else {
+          ctrl.forward(from: 0.0);
+          ctrl.stop();
+        }
+      case 7:
+        setState(() {
+          _isPlaying6 = !_isPlaying6;
+          print(_isPlaying6);
+        });
+
+        if (_isPlaying6) {
+          ctrl.repeat();
+        } else {
+          ctrl.forward(from: 0.0);
+          ctrl.stop();
+        }
+
+        //// Additional Function Call
+
+        break;
+      case 8:
+        setState(() {
+          _isPlaying7 = !_isPlaying7;
+          print(_isPlaying7);
+        });
+
+        if (_isPlaying7) {
+          ctrl.repeat();
+        } else {
+          ctrl.forward(from: 0.0);
+          ctrl.stop();
+        }
+
+        //// Additional Function Call
+
+        break;
+      case 9:
+        setState(() {
+          _isPlaying8 = !_isPlaying8;
+          print(_isPlaying8);
+        });
+
+        if (_isPlaying8) {
+          ctrl.repeat();
+        } else {
+          ctrl.forward(from: 0.0);
+          ctrl.stop();
+        }
+
+        //// Additional Function Call
+
+        break;
+      case 10:
+        setState(() {
+          _isPlaying9 = !_isPlaying9;
+          print(_isPlaying9);
+        });
+
+        if (_isPlaying9) {
+          ctrl.repeat();
+        } else {
+          ctrl.forward(from: 0.0);
+          ctrl.stop();
+        }
+
+        //// Additional Function Call
+
+        break;
+      case 11:
+        setState(() {
+          _isPlaying10 = !_isPlaying10;
+          print(_isPlaying10);
+        });
+
+        if (_isPlaying10) {
+          ctrl.repeat();
+        } else {
+          ctrl.forward(from: 0.0);
+          ctrl.stop();
+        }
+
+        //// Additional Function Call
+
+        break;
+      case 12:
+        setState(() {
+          _isPlaying11 = !_isPlaying11;
+          print(_isPlaying11);
+        });
+
+        if (_isPlaying11) {
+          ctrl.repeat();
+        } else {
+          ctrl.forward(from: 0.0);
+          ctrl.stop();
+        }
+
+        //// Additional Function Call
+
+        break;
+      default:
+    }
   }
 
   @override
@@ -187,35 +377,44 @@ class _speedometerState extends State<speedometer>
     }
 
     print(MediaQuery.of(context).size.width);
-    return Transform.scale(
-      scale: scaleFactor,
+    return Transform(
+      alignment: Alignment.bottomCenter,
+      transform: Matrix4.identity()..scale(scaleFactor, scaleFactor, 1.0),
       child: Container(
         width: 320,
         height: 200,
-        // color: Colors.blueAccent,
         child: Stack(
           children: [
-            /// arc-shape
+            /// arc shape
 
             Positioned(
-              top: 70,
-              left: 40,
-              child: Container(
-                width: 240,
-                height: 100,
-                child: SvgPicture.string(arcShape),
-              ),
-            ),
+                top: 10,
+                left: 35,
+                child: Container(
+                    width: 250,
+                    height: 80,
+                    child: CustomPaint(
+                        size: Size(
+                            100,
+                            (100 * 1.0539226769161203)
+                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                        painter: ArcShape()))),
 
             /// grey arc outlline
 
             Positioned(
-              left: 0,
-              top: 2,
+              // left: 0,
+              top: 45,
               child: Container(
                 width: 320,
-                height: 200,
-                child: SvgPicture.string(arcOutlines),
+                // height: 100,
+                child: CustomPaint(
+                  size: Size(
+                      100,
+                      (100 * 1.0539226769161203)
+                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                  painter: ArcOutline(),
+                ),
               ),
             ),
 
@@ -224,28 +423,44 @@ class _speedometerState extends State<speedometer>
               bottom: 68,
               left: 9,
               child: Container(
-                  width: 15,
-                  height: 15,
-                  child: _speedometerAnimations
-                      ?.buildAnimationBody(SvgPicture.string(
-                    circle1,
-                    width: 12,
-                    height: 12,
-                  ))),
+                width: 20,
+                height: 20,
+                child: _speedometerAnimations?.buildAnimationBody(
+                    monthColors.janColor,
+                    Container(
+                      width: 12,
+                      height: 12,
+                      child: CustomPaint(
+                        size: Size(
+                            100,
+                            (100 * 1.0539226769161203)
+                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                        painter: Circle1(),
+                      ),
+                    )),
+              ),
             ),
             //// circle-2
             Positioned(
               bottom: 94,
               left: 31,
               child: Container(
-                  width: 15,
-                  height: 15,
-                  child: _speedometerAnimations1
-                      ?.buildAnimationBody(SvgPicture.string(
-                    circle2,
-                    width: 12,
-                    height: 12,
-                  ))),
+                width: 20,
+                height: 20,
+                child: _speedometerAnimations1?.buildAnimationBody(
+                    monthColors.febColor,
+                    Container(
+                      width: 12,
+                      height: 12,
+                      child: CustomPaint(
+                        size: Size(
+                            100,
+                            (100 * 1.0539226769161203)
+                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                        painter: Circle2(),
+                      ),
+                    )),
+              ),
             ),
 
             //// circle-3
@@ -253,29 +468,46 @@ class _speedometerState extends State<speedometer>
               bottom: 116,
               left: 58,
               child: Container(
-                  width: 15,
-                  height: 15,
-                  child: _speedometerAnimations2
-                      ?.buildAnimationBody(SvgPicture.string(
-                    circle3,
-                    width: 12,
-                    height: 12,
-                  ))),
+                width: 20,
+                height: 20,
+                child: _speedometerAnimations2?.buildAnimationBody(
+                    monthColors.marColor,
+                    Container(
+                      width: 12,
+                      height: 12,
+                      child: CustomPaint(
+                        size: Size(
+                            100,
+                            (100 * 1.0539226769161203)
+                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                        painter: Circle3(),
+                      ),
+                    )),
+              ),
             ),
+
             //// circle-4
 
             Positioned(
               bottom: 130,
               left: 85,
               child: Container(
-                  width: 15,
-                  height: 15,
-                  child: _speedometerAnimations3
-                      ?.buildAnimationBody(SvgPicture.string(
-                    circle4,
-                    width: 12,
-                    height: 12,
-                  ))),
+                width: 20,
+                height: 20,
+                child: _speedometerAnimations3?.buildAnimationBody(
+                    monthColors.aprColor,
+                    Container(
+                      width: 12,
+                      height: 12,
+                      child: CustomPaint(
+                        size: Size(
+                            100,
+                            (100 * 1.0539226769161203)
+                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                        painter: Circle4(),
+                      ),
+                    )),
+              ),
             ),
             //// circle-5
 
@@ -283,84 +515,132 @@ class _speedometerState extends State<speedometer>
               bottom: 140,
               left: 112,
               child: Container(
-                  width: 15,
-                  height: 15,
-                  child: _speedometerAnimations4
-                      ?.buildAnimationBody(SvgPicture.string(
-                    circle5,
-                    width: 12,
-                    height: 12,
-                  ))),
+                width: 20,
+                height: 20,
+                child: _speedometerAnimations4?.buildAnimationBody(
+                    monthColors.mayColor,
+                    Container(
+                      width: 12,
+                      height: 12,
+                      child: CustomPaint(
+                        size: Size(
+                            100,
+                            (100 * 1.0539226769161203)
+                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                        painter: Circle5(),
+                      ),
+                    )),
+              ),
             ),
             //// circle-6
             Positioned(
               bottom: 144,
-              left: 141,
+              left: 140,
               child: Container(
-                  width: 15,
-                  height: 15,
-                  child: _speedometerAnimations5
-                      ?.buildAnimationBody(SvgPicture.string(
-                    circle6,
-                    width: 12,
-                    height: 12,
-                  ))),
+                width: 20,
+                height: 20,
+                child: _speedometerAnimations5?.buildAnimationBody(
+                    monthColors.junColor,
+                    Container(
+                      width: 12,
+                      height: 12,
+                      child: CustomPaint(
+                        size: Size(
+                            100,
+                            (100 * 1.0539226769161203)
+                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                        painter: Circle6(),
+                      ),
+                    )),
+              ),
             ),
             //// circle-7
             Positioned(
               bottom: 144,
               left: 165,
               child: Container(
-                  width: 15,
-                  height: 15,
-                  child: _speedometerAnimations6
-                      ?.buildAnimationBody(SvgPicture.string(
-                    circle7,
-                    width: 12,
-                    height: 12,
-                  ))),
+                width: 20,
+                height: 20,
+                child: _speedometerAnimations6?.buildAnimationBody(
+                    monthColors.julColor,
+                    Container(
+                      width: 12,
+                      height: 12,
+                      child: CustomPaint(
+                        size: Size(
+                            100,
+                            (100 * 1.0539226769161203)
+                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                        painter: Circle7(),
+                      ),
+                    )),
+              ),
             ),
             //// circle-8
             Positioned(
               bottom: 139,
               left: 193,
               child: Container(
-                  width: 15,
-                  height: 15,
-                  child: _speedometerAnimations7
-                      ?.buildAnimationBody(SvgPicture.string(
-                    circle8,
-                    width: 12,
-                    height: 12,
-                  ))),
+                width: 20,
+                height: 20,
+                child: _speedometerAnimations7?.buildAnimationBody(
+                    monthColors.augColor,
+                    Container(
+                      width: 12,
+                      height: 12,
+                      child: CustomPaint(
+                        size: Size(
+                            100,
+                            (100 * 1.0539226769161203)
+                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                        painter: Circle8(),
+                      ),
+                    )),
+              ),
             ),
             //// circle-9
             Positioned(
               bottom: 131,
               left: 219,
               child: Container(
-                  width: 15,
-                  height: 15,
-                  child: _speedometerAnimations8
-                      ?.buildAnimationBody(SvgPicture.string(
-                    circle9,
-                    width: 12,
-                    height: 12,
-                  ))),
+                width: 20,
+                height: 20,
+                child: _speedometerAnimations8?.buildAnimationBody(
+                    monthColors.sepColor,
+                    Container(
+                      width: 12,
+                      height: 12,
+                      child: CustomPaint(
+                        size: Size(
+                            100,
+                            (100 * 1.0539226769161203)
+                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                        painter: Circle9(),
+                      ),
+                    )),
+              ),
             ),
             //// circle-10
             Positioned(
               bottom: 116,
               left: 247,
               child: Container(
-                  width: 15,
-                  height: 15,
-                  child: _speedometerAnimations9
-                      ?.buildAnimationBody(SvgPicture.string(
-                    circle10,
-                    width: 12,
-                    height: 12,
-                  ))),
+                width: 20,
+                height: 20,
+                child: _speedometerAnimations9?.buildAnimationBody(
+                    monthColors.octColor,
+                    Container(
+                      width: 12,
+                      height: 12,
+                      child: CustomPaint(
+                        size: Size(
+                            100,
+                            (100 * 1.0539226769161203)
+                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                        painter: Circle10(),
+                      ),
+                    )),
+              ),
             ),
 
             //// circle-11
@@ -369,31 +649,45 @@ class _speedometerState extends State<speedometer>
               bottom: 95,
               left: 274,
               child: Container(
-                  width: 15,
-                  height: 15,
-                  child: _speedometerAnimations10
-                      ?.buildAnimationBody(SvgPicture.string(
-                    circle11,
-                    width: 12,
-                    height: 12,
-                  ))),
+                width: 20,
+                height: 20,
+                child: _speedometerAnimations10?.buildAnimationBody(
+                    monthColors.novColor,
+                    Container(
+                      width: 12,
+                      height: 12,
+                      child: CustomPaint(
+                        size: Size(
+                            100,
+                            (100 * 1.0539226769161203)
+                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                        painter: Circle11(),
+                      ),
+                    )),
+              ),
             ),
-
             //// circle-12
             Positioned(
               bottom: 69,
               left: 295,
               child: Container(
-                  width: 15,
-                  height: 15,
-                  child: _speedometerAnimations11
-                      ?.buildAnimationBody(SvgPicture.string(
-                    circle12,
-                    width: 12,
-                    height: 12,
-                  ))),
+                width: 20,
+                height: 20,
+                child: _speedometerAnimations11?.buildAnimationBody(
+                    monthColors.decColor,
+                    Container(
+                      width: 12,
+                      height: 12,
+                      child: CustomPaint(
+                        size: Size(
+                            100,
+                            (100 * 1.0539226769161203)
+                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                        painter: Circle12(),
+                      ),
+                    )),
+              ),
             ),
-
             //Jan
 
             Positioned(
@@ -404,9 +698,15 @@ class _speedometerState extends State<speedometer>
                 height: 30,
                 child: GestureDetector(
                   onTap: () {
-                    startAnimation(_controller);
+                    _toggleAnimation(1, _controller);
                   },
-                  child: SvgPicture.string(january),
+                  child: CustomPaint(
+                    size: Size(
+                        100,
+                        (100 * 1.0539226769161203)
+                            .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                    painter: January(),
+                  ),
                 ),
               ),
             ),
@@ -421,9 +721,14 @@ class _speedometerState extends State<speedometer>
                 height: 26,
                 child: GestureDetector(
                   onTap: () {
-                    startAnimation(_controller1);
+                    _toggleAnimation(2, _controller1);
                   },
-                  child: SvgPicture.string(febuary),
+                  child: CustomPaint(
+                      size: Size(
+                          100,
+                          (100 * 1.0539226769161203)
+                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                      painter: Febuary()),
                 ),
               ),
             ),
@@ -432,15 +737,20 @@ class _speedometerState extends State<speedometer>
 
             Positioned(
               bottom: 87,
-              left: 63,
+              left: 65,
               child: Container(
-                width: 28,
-                height: 28,
+                width: 24,
+                height: 29,
                 child: GestureDetector(
                   onTap: () {
-                    startAnimation(_controller2);
+                    _toggleAnimation(3, _controller2);
                   },
-                  child: SvgPicture.string(march),
+                  child: CustomPaint(
+                      size: Size(
+                          180,
+                          (100 * 1.0539226769161203)
+                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                      painter: March()),
                 ),
               ),
             ),
@@ -448,16 +758,21 @@ class _speedometerState extends State<speedometer>
             ///// april
 
             Positioned(
-              bottom: 102,
-              left: 86,
+              bottom: 103,
+              left: 85.5,
               child: Container(
-                width: 27,
+                width: 28,
                 height: 23,
                 child: GestureDetector(
                   onTap: () {
-                    startAnimation(_controller3);
+                    _toggleAnimation(4, _controller3);
                   },
-                  child: SvgPicture.string(april),
+                  child: CustomPaint(
+                      size: Size(
+                          100,
+                          (100 * 1.0539226769161203)
+                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                      painter: April()),
                 ),
               ),
             ),
@@ -465,16 +780,21 @@ class _speedometerState extends State<speedometer>
             ///may
 
             Positioned(
-              bottom: 114.3,
+              bottom: 115,
               left: 112,
               child: Container(
                 width: 24,
                 height: 19,
                 child: GestureDetector(
                   onTap: () {
-                    startAnimation(_controller4);
+                    _toggleAnimation(5, _controller4);
                   },
-                  child: SvgPicture.string(may),
+                  child: CustomPaint(
+                      size: Size(
+                          100,
+                          (100 * 1.0539226769161203)
+                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                      painter: May()),
                 ),
               ),
             ),
@@ -482,16 +802,21 @@ class _speedometerState extends State<speedometer>
             ///Jun
 
             Positioned(
-              bottom: 120.5,
+              bottom: 121,
               left: 135.5,
               child: Container(
                 width: 23.5,
                 height: 17,
                 child: GestureDetector(
                   onTap: () {
-                    startAnimation(_controller5);
+                    _toggleAnimation(6, _controller5);
                   },
-                  child: SvgPicture.string(june),
+                  child: CustomPaint(
+                      size: Size(
+                          100,
+                          (100 * 1.0539226769161203)
+                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                      painter: June()),
                 ),
               ),
             ),
@@ -499,16 +824,21 @@ class _speedometerState extends State<speedometer>
             //// july
 
             Positioned(
-              bottom: 120.5,
+              bottom: 120.8,
               left: 158.5,
               child: Container(
                 width: 25,
                 height: 17,
                 child: GestureDetector(
                   onTap: () {
-                    startAnimation(_controller6);
+                    _toggleAnimation(7, _controller6);
                   },
-                  child: SvgPicture.string(july),
+                  child: CustomPaint(
+                      size: Size(
+                          100,
+                          (100 * 1.0539226769161203)
+                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                      painter: July()),
                 ),
               ),
             ),
@@ -517,15 +847,20 @@ class _speedometerState extends State<speedometer>
 
             Positioned(
               bottom: 114.5,
-              left: 181.5,
+              left: 183.5,
               child: Container(
-                width: 27,
-                height: 19,
+                width: 23,
+                height: 19.3,
                 child: GestureDetector(
                   onTap: () {
-                    startAnimation(_controller7);
+                    _toggleAnimation(8, _controller7);
                   },
-                  child: SvgPicture.string(august),
+                  child: CustomPaint(
+                      size: Size(
+                          100,
+                          (100 * 1.0539226769161203)
+                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                      painter: Aug()),
                 ),
               ),
             ),
@@ -533,16 +868,21 @@ class _speedometerState extends State<speedometer>
             /// sep
 
             Positioned(
-              bottom: 102.5,
-              left: 207,
+              bottom: 103.7,
+              left: 206.5,
               child: Container(
-                width: 24,
-                height: 24,
+                width: 23,
+                height: 22,
                 child: GestureDetector(
                   onTap: () {
-                    startAnimation(_controller8);
+                    _toggleAnimation(9, _controller8);
                   },
-                  child: SvgPicture.string(september),
+                  child: CustomPaint(
+                      size: Size(
+                          100,
+                          (100 * 1.0539226769161203)
+                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                      painter: Sep()),
                 ),
               ),
             ),
@@ -550,16 +890,21 @@ class _speedometerState extends State<speedometer>
             //         //// oct
 
             Positioned(
-              bottom: 87,
-              left: 230,
+              bottom: 86.5,
+              left: 229.5,
               child: Container(
                 width: 24,
                 height: 28,
                 child: GestureDetector(
                   onTap: () {
-                    startAnimation(_controller9);
+                    _toggleAnimation(10, _controller9);
                   },
-                  child: SvgPicture.string(october),
+                  child: CustomPaint(
+                      size: Size(
+                          100,
+                          (100 * 1.0539226769161203)
+                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                      painter: Oct()),
                 ),
               ),
             ),
@@ -567,16 +912,21 @@ class _speedometerState extends State<speedometer>
             /// nov
 
             Positioned(
-              bottom: 60,
-              left: 252,
+              bottom: 59,
+              left: 253,
               child: Container(
-                width: 28,
-                height: 40,
+                width: 25,
+                height: 40.5,
                 child: GestureDetector(
                   onTap: () {
-                    startAnimation(_controller10);
+                    _toggleAnimation(11, _controller10);
                   },
-                  child: SvgPicture.string(november),
+                  child: CustomPaint(
+                      size: Size(
+                          100,
+                          (100 * 1.0539226769161203)
+                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                      painter: Nov()),
                 ),
               ),
             ),
@@ -586,15 +936,20 @@ class _speedometerState extends State<speedometer>
             ///
             Positioned(
               bottom: 50,
-              left: 274,
+              left: 278,
               child: Container(
-                width: 26,
-                height: 27,
+                width: 16,
+                height: 26,
                 child: GestureDetector(
                   onTap: () {
-                    startAnimation(_controller11);
+                    _toggleAnimation(12, _controller11);
                   },
-                  child: SvgPicture.string(december),
+                  child: CustomPaint(
+                      size: Size(
+                          100,
+                          (100 * 1.0539226769161203)
+                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                      painter: Dec()),
                 ),
               ),
             ),
@@ -602,5 +957,130 @@ class _speedometerState extends State<speedometer>
         ),
       ),
     );
+  }
+}
+
+/// circle6
+///
+///
+///
+class Circle6 extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    Path path_0 = Path();
+    path_0.moveTo(size.width * 1.030696, size.height * 0.5250079);
+    path_0.arcToPoint(Offset(size.width * 0.03164557, size.height * 0.5360874),
+        radius:
+            Radius.elliptical(size.width * 0.4998418, size.height * 0.5000000),
+        rotation: 0,
+        largeArc: false,
+        clockwise: false);
+    path_0.cubicTo(
+        size.width * 0.03164557,
+        size.height * 0.5528648,
+        size.width * 0.03164557,
+        size.height * 0.5698006,
+        size.width * 0.03354430,
+        size.height * 0.5856284);
+    path_0.arcToPoint(Offset(size.width * 0.05221519, size.height * 0.6805951),
+        radius:
+            Radius.elliptical(size.width * 0.4848101, size.height * 0.4849636),
+        rotation: 0,
+        largeArc: false,
+        clockwise: false);
+    path_0.arcToPoint(Offset(size.width * 1.031013, size.height * 0.5364039),
+        radius:
+            Radius.elliptical(size.width * 0.5001582, size.height * 0.5003166),
+        rotation: 0,
+        largeArc: false,
+        clockwise: false);
+    path_0.cubicTo(
+        size.width * 1.031013,
+        size.height * 0.5322887,
+        size.width * 1.031013,
+        size.height * 0.5288066,
+        size.width * 1.030696,
+        size.height * 0.5250079);
+    path_0.close();
+    path_0.moveTo(size.width * 0.7753165, size.height * 0.5360874);
+    path_0.arcToPoint(Offset(size.width * 0.7560127, size.height * 0.6310541),
+        radius:
+            Radius.elliptical(size.width * 0.2466772, size.height * 0.2467553),
+        rotation: 0,
+        largeArc: false,
+        clockwise: true);
+    path_0.arcToPoint(Offset(size.width * 0.3200949, size.height * 0.6579614),
+        radius:
+            Radius.elliptical(size.width * 0.2441456, size.height * 0.2442229),
+        rotation: 0,
+        largeArc: false,
+        clockwise: true);
+    path_0.arcToPoint(Offset(size.width * 0.2892405, size.height * 0.5645774),
+        radius:
+            Radius.elliptical(size.width * 0.2373418, size.height * 0.2374169),
+        rotation: 0,
+        largeArc: false,
+        clockwise: true);
+    path_0.arcToPoint(Offset(size.width * 0.2873418, size.height * 0.5354543),
+        radius:
+            Radius.elliptical(size.width * 0.2215190, size.height * 0.2215891),
+        rotation: 0,
+        largeArc: false,
+        clockwise: true);
+    path_0.arcToPoint(Offset(size.width * 0.7753165, size.height * 0.5354543),
+        radius:
+            Radius.elliptical(size.width * 0.2439873, size.height * 0.2440646),
+        rotation: 0,
+        largeArc: false,
+        clockwise: true);
+    path_0.close();
+
+    Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
+    paint_0_fill.color = Color(0xff876ae3).withOpacity(1.0);
+    canvas.drawPath(path_0, paint_0_fill);
+
+    Path path_1 = Path();
+    path_1.moveTo(size.width * 0.7753165, size.height * 0.5354543);
+    path_1.lineTo(size.width * 0.7753165, size.height * 0.5354543);
+    path_1.arcToPoint(Offset(size.width * 0.7560127, size.height * 0.6304210),
+        radius:
+            Radius.elliptical(size.width * 0.2466772, size.height * 0.2467553),
+        rotation: 0,
+        largeArc: false,
+        clockwise: true);
+    path_1.arcToPoint(Offset(size.width * 0.3200949, size.height * 0.6573283),
+        radius:
+            Radius.elliptical(size.width * 0.2441456, size.height * 0.2442229),
+        rotation: 0,
+        largeArc: false,
+        clockwise: true);
+    path_1.arcToPoint(Offset(size.width * 0.2892405, size.height * 0.5639443),
+        radius:
+            Radius.elliptical(size.width * 0.2373418, size.height * 0.2374169),
+        rotation: 0,
+        largeArc: false,
+        clockwise: true);
+    path_1.arcToPoint(Offset(size.width * 0.2873418, size.height * 0.5348211),
+        radius:
+            Radius.elliptical(size.width * 0.2215190, size.height * 0.2215891),
+        rotation: 0,
+        largeArc: false,
+        clockwise: true);
+    path_1.arcToPoint(Offset(size.width * 0.7753165, size.height * 0.5348211),
+        radius:
+            Radius.elliptical(size.width * 0.2439873, size.height * 0.2440646),
+        rotation: 0,
+        largeArc: false,
+        clockwise: true);
+    path_1.close();
+
+    Paint paint_1_fill = Paint()..style = PaintingStyle.fill;
+    paint_1_fill.color = Color(0xffffffff).withOpacity(1.0);
+    canvas.drawPath(path_1, paint_1_fill);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
   }
 }
