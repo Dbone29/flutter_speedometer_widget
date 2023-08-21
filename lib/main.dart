@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(title: const Text('Speedometer Widget')),
-        body: Center(child: speedometer()),
+        body: Container(child: speedometer()),
       ),
     );
   }

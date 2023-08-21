@@ -2,6 +2,7 @@ import 'package:custom_widget_speedometer/constants.dart';
 import 'package:custom_widget_speedometer/customPaints.dart';
 import 'package:custom_widget_speedometer/speedometer_animation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 
 class speedometer extends StatefulWidget {
   const speedometer({super.key});
@@ -50,6 +51,431 @@ class _speedometerState extends State<speedometer>
   bool _isPlaying9 = false;
   bool _isPlaying10 = false;
   bool _isPlaying11 = false;
+
+  void onClickJan() {
+    print("January Button Clicked");
+    // functions for you
+  }
+
+  void onClickFeb() {
+    print("Febuary Button Clicked");
+  }
+
+  void onClickMar() {
+    print("March Button Clicked");
+  }
+
+  void onClickApr() {
+    print("April Button Clicked");
+  }
+
+  void onClickMay() {
+    print("May Button Clicked");
+  }
+
+  void onClickJun() {
+    print("June Button Clicked");
+  }
+
+  void onClickJul() {
+    print("July Button Clicked");
+  }
+
+  void onClickAug() {
+    print("August Button Clicked");
+  }
+
+  void onClickSep() {
+    print("September Button Clicked");
+  }
+
+  void onClickOct() {
+    print("October Button Clicked");
+  }
+
+  void onClickNov() {
+    print("November Button Clicked");
+  }
+
+  void onClickDec() {
+    print("December Button Clicked");
+  }
+
+//// Color picker setting
+
+  void _changeColor1(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Pick a color for Container 1'),
+          content: SingleChildScrollView(
+            child: ColorPicker(
+              pickerColor: monthColors.janColor,
+              onColorChanged: (Color newColor) {
+                setState(() {
+                  monthColors.janColor = newColor;
+                });
+              },
+              showLabel: true,
+              pickerAreaHeightPercent: 0.8,
+            ),
+          ),
+          actions: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text('Done'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  void _changeColor2(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Pick a color for Container 1'),
+          content: SingleChildScrollView(
+            child: ColorPicker(
+              pickerColor: monthColors.febColor,
+              onColorChanged: (Color newColor) {
+                setState(() {
+                  monthColors.febColor = newColor;
+                });
+              },
+              showLabel: true,
+              pickerAreaHeightPercent: 0.8,
+            ),
+          ),
+          actions: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text('Done'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  void _changeColor3(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Pick a color for Container 1'),
+          content: SingleChildScrollView(
+            child: ColorPicker(
+              pickerColor: monthColors.marColor,
+              onColorChanged: (Color newColor) {
+                setState(() {
+                  monthColors.marColor = newColor;
+                });
+              },
+              showLabel: true,
+              pickerAreaHeightPercent: 0.8,
+            ),
+          ),
+          actions: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text('Done'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  void _changeColor4(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Pick a color for Container 1'),
+          content: SingleChildScrollView(
+            child: ColorPicker(
+              pickerColor: monthColors.aprColor,
+              onColorChanged: (Color newColor) {
+                setState(() {
+                  monthColors.aprColor = newColor;
+                });
+              },
+              showLabel: true,
+              pickerAreaHeightPercent: 0.8,
+            ),
+          ),
+          actions: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text('Done'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  void _changeColor5(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Pick a color for Container 1'),
+          content: SingleChildScrollView(
+            child: ColorPicker(
+              pickerColor: monthColors.mayColor,
+              onColorChanged: (Color newColor) {
+                setState(() {
+                  monthColors.mayColor = newColor;
+                });
+              },
+              showLabel: true,
+              pickerAreaHeightPercent: 0.8,
+            ),
+          ),
+          actions: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text('Done'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  void _changeColor6(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Pick a color for Container 1'),
+          content: SingleChildScrollView(
+            child: ColorPicker(
+              pickerColor: monthColors.junColor,
+              onColorChanged: (Color newColor) {
+                setState(() {
+                  monthColors.junColor = newColor;
+                });
+              },
+              showLabel: true,
+              pickerAreaHeightPercent: 0.8,
+            ),
+          ),
+          actions: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text('Done'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  void _changeColor7(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Pick a color for Container 1'),
+          content: SingleChildScrollView(
+            child: ColorPicker(
+              pickerColor: monthColors.julColor,
+              onColorChanged: (Color newColor) {
+                setState(() {
+                  monthColors.julColor = newColor;
+                });
+              },
+              showLabel: true,
+              pickerAreaHeightPercent: 0.8,
+            ),
+          ),
+          actions: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text('Done'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  void _changeColor8(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Pick a color for Container 1'),
+          content: SingleChildScrollView(
+            child: ColorPicker(
+              pickerColor: monthColors.augColor,
+              onColorChanged: (Color newColor) {
+                setState(() {
+                  monthColors.augColor = newColor;
+                });
+              },
+              showLabel: true,
+              pickerAreaHeightPercent: 0.8,
+            ),
+          ),
+          actions: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text('Done'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  void _changeColor9(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Pick a color for Container 1'),
+          content: SingleChildScrollView(
+            child: ColorPicker(
+              pickerColor: monthColors.sepColor,
+              onColorChanged: (Color newColor) {
+                setState(() {
+                  monthColors.sepColor = newColor;
+                });
+              },
+              showLabel: true,
+              pickerAreaHeightPercent: 0.8,
+            ),
+          ),
+          actions: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text('Done'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  void _changeColor10(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Pick a color for Container 1'),
+          content: SingleChildScrollView(
+            child: ColorPicker(
+              pickerColor: monthColors.octColor,
+              onColorChanged: (Color newColor) {
+                setState(() {
+                  monthColors.octColor = newColor;
+                });
+              },
+              showLabel: true,
+              pickerAreaHeightPercent: 0.8,
+            ),
+          ),
+          actions: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text('Done'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  void _changeColor11(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Pick a color for Container 1'),
+          content: SingleChildScrollView(
+            child: ColorPicker(
+              pickerColor: monthColors.novColor,
+              onColorChanged: (Color newColor) {
+                setState(() {
+                  monthColors.novColor = newColor;
+                });
+              },
+              showLabel: true,
+              pickerAreaHeightPercent: 0.8,
+            ),
+          ),
+          actions: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text('Done'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  void _changeColor12(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Pick a color for Container 1'),
+          content: SingleChildScrollView(
+            child: ColorPicker(
+              pickerColor: monthColors.decColor,
+              onColorChanged: (Color newColor) {
+                setState(() {
+                  monthColors.decColor = newColor;
+                });
+              },
+              showLabel: true,
+              pickerAreaHeightPercent: 0.8,
+            ),
+          ),
+          actions: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text('Done'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+/////
 
   @override
   void initState() {
@@ -166,12 +592,13 @@ class _speedometerState extends State<speedometer>
     ctn.forward(from: 0.0);
   }
 
+  /// triggering animation
+
   void _toggleAnimation(choice, ctrl) {
     switch (choice) {
       case 1:
         setState(() {
           _isPlaying = !_isPlaying;
-          print(_isPlaying);
         });
 
         if (_isPlaying) {
@@ -181,13 +608,10 @@ class _speedometerState extends State<speedometer>
           ctrl.stop();
         }
 
-        //// Additional Function Call
-
         break;
       case 2:
         setState(() {
           _isPlaying1 = !_isPlaying1;
-          print(_isPlaying1);
         });
 
         if (_isPlaying1) {
@@ -197,13 +621,10 @@ class _speedometerState extends State<speedometer>
           ctrl.stop();
         }
 
-        //// Additional Function Call
-
         break;
       case 3:
         setState(() {
           _isPlaying2 = !_isPlaying2;
-          print(_isPlaying2);
         });
 
         if (_isPlaying2) {
@@ -213,13 +634,10 @@ class _speedometerState extends State<speedometer>
           ctrl.stop();
         }
 
-        //// Additional Function Call
-
         break;
       case 4:
         setState(() {
           _isPlaying3 = !_isPlaying3;
-          print(_isPlaying3);
         });
 
         if (_isPlaying3) {
@@ -229,13 +647,10 @@ class _speedometerState extends State<speedometer>
           ctrl.stop();
         }
 
-        //// Additional Function Call
-
         break;
       case 5:
         setState(() {
           _isPlaying4 = !_isPlaying4;
-          print(_isPlaying4);
         });
 
         if (_isPlaying4) {
@@ -245,13 +660,10 @@ class _speedometerState extends State<speedometer>
           ctrl.stop();
         }
 
-        //// Additional Function Call
-
         break;
       case 6:
         setState(() {
           _isPlaying5 = !_isPlaying5;
-          print(_isPlaying5);
         });
 
         if (_isPlaying5) {
@@ -263,7 +675,6 @@ class _speedometerState extends State<speedometer>
       case 7:
         setState(() {
           _isPlaying6 = !_isPlaying6;
-          print(_isPlaying6);
         });
 
         if (_isPlaying6) {
@@ -273,13 +684,10 @@ class _speedometerState extends State<speedometer>
           ctrl.stop();
         }
 
-        //// Additional Function Call
-
         break;
       case 8:
         setState(() {
           _isPlaying7 = !_isPlaying7;
-          print(_isPlaying7);
         });
 
         if (_isPlaying7) {
@@ -289,13 +697,10 @@ class _speedometerState extends State<speedometer>
           ctrl.stop();
         }
 
-        //// Additional Function Call
-
         break;
       case 9:
         setState(() {
           _isPlaying8 = !_isPlaying8;
-          print(_isPlaying8);
         });
 
         if (_isPlaying8) {
@@ -305,13 +710,10 @@ class _speedometerState extends State<speedometer>
           ctrl.stop();
         }
 
-        //// Additional Function Call
-
         break;
       case 10:
         setState(() {
           _isPlaying9 = !_isPlaying9;
-          print(_isPlaying9);
         });
 
         if (_isPlaying9) {
@@ -321,13 +723,10 @@ class _speedometerState extends State<speedometer>
           ctrl.stop();
         }
 
-        //// Additional Function Call
-
         break;
       case 11:
         setState(() {
           _isPlaying10 = !_isPlaying10;
-          print(_isPlaying10);
         });
 
         if (_isPlaying10) {
@@ -337,13 +736,10 @@ class _speedometerState extends State<speedometer>
           ctrl.stop();
         }
 
-        //// Additional Function Call
-
         break;
       case 12:
         setState(() {
           _isPlaying11 = !_isPlaying11;
-          print(_isPlaying11);
         });
 
         if (_isPlaying11) {
@@ -352,8 +748,6 @@ class _speedometerState extends State<speedometer>
           ctrl.forward(from: 0.0);
           ctrl.stop();
         }
-
-        //// Additional Function Call
 
         break;
       default:
@@ -376,711 +770,993 @@ class _speedometerState extends State<speedometer>
           screenWidth > screenHeight ? screenWidth / 450 : screenHeight / 450;
     }
 
-    print(MediaQuery.of(context).size.width);
-    return Transform(
-      alignment: Alignment.bottomCenter,
-      transform: Matrix4.identity()..scale(scaleFactor, scaleFactor, 1.0),
-      child: Container(
-        width: 320,
-        height: 200,
-        child: Stack(
+    return Stack(
+      children: [
+        Row(
           children: [
-            /// arc shape
+            Column(
+              children: [
+                //// jan button
 
-            Positioned(
-                top: 10,
-                left: 35,
-                child: Container(
-                    width: 250,
-                    height: 80,
-                    child: CustomPaint(
-                        size: Size(
-                            100,
-                            (100 * 1.0539226769161203)
-                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                        painter: ArcShape()))),
-
-            /// grey arc outlline
-
-            Positioned(
-              // left: 0,
-              top: 45,
-              child: Container(
-                width: 320,
-                // height: 100,
-                child: CustomPaint(
-                  size: Size(
-                      100,
-                      (100 * 1.0539226769161203)
-                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                  painter: ArcOutline(),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 1,
+                            vertical:
+                                1), // Adjust padding to change button size
+                        textStyle: TextStyle(fontSize: 11), // Adjust text size
+                      ),
+                      onPressed: () => _changeColor1(context),
+                      child: Text('January Color'),
+                    ),
+                    Switch(
+                        value: _isPlaying,
+                        onChanged: ((value) {
+                          _toggleAnimation(1, _controller);
+                          setState(() {
+                            _isPlaying = value;
+                          });
+                        }))
+                  ],
                 ),
-              ),
+
+                ///
+                ///
+                //// feb button
+                ///
+                ///
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 1,
+                            vertical:
+                                1), // Adjust padding to change button size
+                        textStyle: TextStyle(fontSize: 11), // Adjust text size
+                      ),
+                      onPressed: () => _changeColor2(context),
+                      child: Text('Febuary Color'),
+                    ),
+                    Switch(
+                        value: _isPlaying1,
+                        onChanged: ((value) {
+                          _toggleAnimation(2, _controller1);
+                          setState(() {
+                            _isPlaying1 = value;
+                          });
+                        }))
+                  ],
+                ),
+
+                //// mar button
+
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 1,
+                            vertical:
+                                1), // Adjust padding to change button size
+                        textStyle: TextStyle(fontSize: 11), // Adjust text size
+                      ),
+                      onPressed: () => _changeColor3(context),
+                      child: Text('March Color   '),
+                    ),
+                    Switch(
+                        value: _isPlaying2,
+                        onChanged: ((value) {
+                          _toggleAnimation(3, _controller2);
+                          setState(() {
+                            _isPlaying2 = value;
+                          });
+                        }))
+                  ],
+                ),
+
+                /// 4th april button
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 1,
+                            vertical:
+                                1), // Adjust padding to change button size
+                        textStyle: TextStyle(fontSize: 11), // Adjust text size
+                      ),
+                      onPressed: () => _changeColor4(context),
+                      child: Text('April Color'),
+                    ),
+                    Switch(
+                        value: _isPlaying3,
+                        onChanged: ((value) {
+                          _toggleAnimation(4, _controller3);
+                          setState(() {
+                            _isPlaying3 = value;
+                          });
+                        }))
+                  ],
+                ),
+              ],
             ),
 
-            //// circle-1
-            Positioned(
-              bottom: 68,
-              left: 9,
-              child: Container(
-                width: 20,
-                height: 20,
-                child: _speedometerAnimations?.buildAnimationBody(
-                    monthColors.janColor,
-                    Container(
-                      width: 12,
-                      height: 12,
-                      child: CustomPaint(
-                        size: Size(
-                            100,
-                            (100 * 1.0539226769161203)
-                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                        painter: Circle1(),
+            /// Column 2, from May
+            ///
+
+            ///
+            /// 5th May button
+            ///
+
+            Column(
+              children: [
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 1,
+                            vertical:
+                                1), // Adjust padding to change button size
+                        textStyle: TextStyle(fontSize: 11), // Adjust text size
                       ),
-                    )),
-              ),
-            ),
-            //// circle-2
-            Positioned(
-              bottom: 94,
-              left: 31,
-              child: Container(
-                width: 20,
-                height: 20,
-                child: _speedometerAnimations1?.buildAnimationBody(
-                    monthColors.febColor,
-                    Container(
-                      width: 12,
-                      height: 12,
-                      child: CustomPaint(
-                        size: Size(
-                            100,
-                            (100 * 1.0539226769161203)
-                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                        painter: Circle2(),
+                      onPressed: () => _changeColor5(context),
+                      child: Text('May Color'),
+                    ),
+                    Switch(
+                        value: _isPlaying4,
+                        onChanged: ((value) {
+                          _toggleAnimation(5, _controller4);
+                          setState(() {
+                            _isPlaying4 = value;
+                          });
+                        }))
+                  ],
+                ),
+
+                /// 6th June button
+
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 1,
+                            vertical:
+                                1), // Adjust padding to change button size
+                        textStyle: TextStyle(fontSize: 11), // Adjust text size
                       ),
-                    )),
-              ),
+                      onPressed: () => _changeColor6(context),
+                      child: Text('June Color'),
+                    ),
+                    Switch(
+                        value: _isPlaying5,
+                        onChanged: ((value) {
+                          _toggleAnimation(6, _controller5);
+                          setState(() {
+                            _isPlaying5 = value;
+                          });
+                        }))
+                  ],
+                ),
+
+                /// 7th July button
+                ///
+
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 1,
+                            vertical:
+                                1), // Adjust padding to change button size
+                        textStyle: TextStyle(fontSize: 11), // Adjust text size
+                      ),
+                      onPressed: () => _changeColor7(context),
+                      child: Text('July Color   '),
+                    ),
+                    Switch(
+                        value: _isPlaying6,
+                        onChanged: ((value) {
+                          _toggleAnimation(7, _controller6);
+                          setState(() {
+                            _isPlaying6 = value;
+                          });
+                        }))
+                  ],
+                ),
+
+                /// 8th Aug button
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 1,
+                            vertical:
+                                1), // Adjust padding to change button size
+                        textStyle: TextStyle(fontSize: 11), // Adjust text size
+                      ),
+                      onPressed: () => _changeColor8(context),
+                      child: Text('August Color'),
+                    ),
+                    Switch(
+                        value: _isPlaying7,
+                        onChanged: ((value) {
+                          _toggleAnimation(8, _controller7);
+                          setState(() {
+                            _isPlaying7 = value;
+                          });
+                        }))
+                  ],
+                ),
+              ],
             ),
 
-            //// circle-3
-            Positioned(
-              bottom: 116,
-              left: 58,
-              child: Container(
-                width: 20,
-                height: 20,
-                child: _speedometerAnimations2?.buildAnimationBody(
-                    monthColors.marColor,
-                    Container(
-                      width: 12,
-                      height: 12,
-                      child: CustomPaint(
-                        size: Size(
-                            100,
-                            (100 * 1.0539226769161203)
-                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                        painter: Circle3(),
-                      ),
-                    )),
-              ),
-            ),
+            /// Column 3
 
-            //// circle-4
+            Column(
+              children: [
+                ////// 9th Sep button
 
-            Positioned(
-              bottom: 130,
-              left: 85,
-              child: Container(
-                width: 20,
-                height: 20,
-                child: _speedometerAnimations3?.buildAnimationBody(
-                    monthColors.aprColor,
-                    Container(
-                      width: 12,
-                      height: 12,
-                      child: CustomPaint(
-                        size: Size(
-                            100,
-                            (100 * 1.0539226769161203)
-                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                        painter: Circle4(),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 1,
+                            vertical:
+                                1), // Adjust padding to change button size
+                        textStyle: TextStyle(fontSize: 11), // Adjust text size
                       ),
-                    )),
-              ),
-            ),
-            //// circle-5
+                      onPressed: () => _changeColor9(context),
+                      child: Text('September Color'),
+                    ),
+                    Switch(
+                        value: _isPlaying8,
+                        onChanged: ((value) {
+                          _toggleAnimation(9, _controller8);
+                          setState(() {
+                            _isPlaying8 = value;
+                          });
+                        }))
+                  ],
+                ),
 
-            Positioned(
-              bottom: 140,
-              left: 112,
-              child: Container(
-                width: 20,
-                height: 20,
-                child: _speedometerAnimations4?.buildAnimationBody(
-                    monthColors.mayColor,
-                    Container(
-                      width: 12,
-                      height: 12,
-                      child: CustomPaint(
-                        size: Size(
-                            100,
-                            (100 * 1.0539226769161203)
-                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                        painter: Circle5(),
-                      ),
-                    )),
-              ),
-            ),
-            //// circle-6
-            Positioned(
-              bottom: 144,
-              left: 140,
-              child: Container(
-                width: 20,
-                height: 20,
-                child: _speedometerAnimations5?.buildAnimationBody(
-                    monthColors.junColor,
-                    Container(
-                      width: 12,
-                      height: 12,
-                      child: CustomPaint(
-                        size: Size(
-                            100,
-                            (100 * 1.0539226769161203)
-                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                        painter: Circle6(),
-                      ),
-                    )),
-              ),
-            ),
-            //// circle-7
-            Positioned(
-              bottom: 144,
-              left: 165,
-              child: Container(
-                width: 20,
-                height: 20,
-                child: _speedometerAnimations6?.buildAnimationBody(
-                    monthColors.julColor,
-                    Container(
-                      width: 12,
-                      height: 12,
-                      child: CustomPaint(
-                        size: Size(
-                            100,
-                            (100 * 1.0539226769161203)
-                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                        painter: Circle7(),
-                      ),
-                    )),
-              ),
-            ),
-            //// circle-8
-            Positioned(
-              bottom: 139,
-              left: 193,
-              child: Container(
-                width: 20,
-                height: 20,
-                child: _speedometerAnimations7?.buildAnimationBody(
-                    monthColors.augColor,
-                    Container(
-                      width: 12,
-                      height: 12,
-                      child: CustomPaint(
-                        size: Size(
-                            100,
-                            (100 * 1.0539226769161203)
-                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                        painter: Circle8(),
-                      ),
-                    )),
-              ),
-            ),
-            //// circle-9
-            Positioned(
-              bottom: 131,
-              left: 219,
-              child: Container(
-                width: 20,
-                height: 20,
-                child: _speedometerAnimations8?.buildAnimationBody(
-                    monthColors.sepColor,
-                    Container(
-                      width: 12,
-                      height: 12,
-                      child: CustomPaint(
-                        size: Size(
-                            100,
-                            (100 * 1.0539226769161203)
-                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                        painter: Circle9(),
-                      ),
-                    )),
-              ),
-            ),
-            //// circle-10
-            Positioned(
-              bottom: 116,
-              left: 247,
-              child: Container(
-                width: 20,
-                height: 20,
-                child: _speedometerAnimations9?.buildAnimationBody(
-                    monthColors.octColor,
-                    Container(
-                      width: 12,
-                      height: 12,
-                      child: CustomPaint(
-                        size: Size(
-                            100,
-                            (100 * 1.0539226769161203)
-                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                        painter: Circle10(),
-                      ),
-                    )),
-              ),
-            ),
+                ////// 10th Sep button
 
-            //// circle-11
-
-            Positioned(
-              bottom: 95,
-              left: 274,
-              child: Container(
-                width: 20,
-                height: 20,
-                child: _speedometerAnimations10?.buildAnimationBody(
-                    monthColors.novColor,
-                    Container(
-                      width: 12,
-                      height: 12,
-                      child: CustomPaint(
-                        size: Size(
-                            100,
-                            (100 * 1.0539226769161203)
-                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                        painter: Circle11(),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 1,
+                            vertical:
+                                1), // Adjust padding to change button size
+                        textStyle: TextStyle(fontSize: 11), // Adjust text size
                       ),
-                    )),
-              ),
-            ),
-            //// circle-12
-            Positioned(
-              bottom: 69,
-              left: 295,
-              child: Container(
-                width: 20,
-                height: 20,
-                child: _speedometerAnimations11?.buildAnimationBody(
-                    monthColors.decColor,
-                    Container(
-                      width: 12,
-                      height: 12,
-                      child: CustomPaint(
-                        size: Size(
-                            100,
-                            (100 * 1.0539226769161203)
-                                .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                        painter: Circle12(),
-                      ),
-                    )),
-              ),
-            ),
-            //Jan
+                      onPressed: () => _changeColor10(context),
+                      child: Text('October Color    '),
+                    ),
+                    Switch(
+                        value: _isPlaying9,
+                        onChanged: ((value) {
+                          _toggleAnimation(10, _controller9);
+                          setState(() {
+                            _isPlaying9 = value;
+                          });
+                        }))
+                  ],
+                ),
 
-            Positioned(
-              bottom: 51,
-              left: 24,
-              child: Container(
-                width: 28,
-                height: 30,
-                child: GestureDetector(
-                  onTap: () {
-                    _toggleAnimation(1, _controller);
-                  },
-                  child: CustomPaint(
-                    size: Size(
-                        100,
-                        (100 * 1.0539226769161203)
-                            .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                    painter: January(),
+                ////// 11th Sep button
+                ///
+
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 1,
+                            vertical:
+                                1), // Adjust padding to change button size
+                        textStyle: TextStyle(fontSize: 11), // Adjust text size
+                      ),
+                      onPressed: () => _changeColor11(context),
+                      child: Text('November Color'),
+                    ),
+                    Switch(
+                        value: _isPlaying10,
+                        onChanged: ((value) {
+                          _toggleAnimation(11, _controller10);
+                          setState(() {
+                            _isPlaying10 = value;
+                          });
+                        }))
+                  ],
+                ),
+
+                /// 12th Dec button
+                ///
+
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 1,
+                            vertical:
+                                1), // Adjust padding to change button size
+                        textStyle: TextStyle(fontSize: 11), // Adjust text size
+                      ),
+                      onPressed: () => _changeColor12(context),
+                      child: Text('December Color'),
+                    ),
+                    Switch(
+                        value: _isPlaying11,
+                        onChanged: ((value) {
+                          _toggleAnimation(12, _controller11);
+                          setState(() {
+                            _isPlaying11 = value;
+                          });
+                        }))
+                  ],
+                ),
+              ],
+            ),
+          ],
+        ),
+
+        /// Expand for pushing the widget down
+        ///
+
+        Expanded(child: Container()),
+
+        Align(
+          alignment: Alignment.bottomCenter,
+          child: Container(
+            height: MediaQuery.of(context).size.height / 2,
+            width: MediaQuery.of(context).size.width,
+            child: Align(
+              alignment: Alignment.bottomCenter,
+              child: Transform(
+                alignment: Alignment.bottomCenter,
+                transform: Matrix4.identity()
+                  ..scale(scaleFactor, scaleFactor, 1.0),
+                child: Container(
+                  width: 320,
+                  height: 120,
+                  // color: Colors.black,
+                  child: Stack(
+                    children: [
+                      /// arc shape
+
+                      Positioned(
+                          bottom: 66,
+                          left: 35,
+                          child: Container(
+                              width: 250,
+                              height: 80,
+                              child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: ArcShape()))),
+
+                      /// grey arc outlline
+
+                      Positioned(
+                        right: 2,
+                        bottom: 2,
+                        child: Container(
+                          width: 320,
+                          // height: 100,
+                          child: CustomPaint(
+                            size: Size(
+                                100,
+                                (100 * 1.0539226769161203)
+                                    .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                            painter: ArcOutline(),
+                          ),
+                        ),
+                      ),
+
+                      //// circle-1
+                      Positioned(
+                        bottom: 23,
+                        left: 9,
+                        child: Container(
+                          width: 20,
+                          height: 20,
+                          child: _speedometerAnimations?.buildAnimationBody(
+                              monthColors.janColor,
+                              Container(
+                                width: 12,
+                                height: 12,
+                                child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: Circle1(),
+                                ),
+                              )),
+                        ),
+                      ),
+                      //// circle-2
+                      Positioned(
+                        bottom: 48,
+                        left: 31,
+                        child: Container(
+                          width: 20,
+                          height: 20,
+                          child: _speedometerAnimations1?.buildAnimationBody(
+                              monthColors.febColor,
+                              Container(
+                                width: 12,
+                                height: 12,
+                                child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: Circle2(),
+                                ),
+                              )),
+                        ),
+                      ),
+
+                      //// circle-3
+                      Positioned(
+                        bottom: 69,
+                        left: 58,
+                        child: Container(
+                          width: 20,
+                          height: 20,
+                          child: _speedometerAnimations2?.buildAnimationBody(
+                              monthColors.marColor,
+                              Container(
+                                width: 12,
+                                height: 12,
+                                child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: Circle3(),
+                                ),
+                              )),
+                        ),
+                      ),
+
+                      //// circle-4
+
+                      Positioned(
+                        bottom: 83,
+                        left: 85,
+                        child: Container(
+                          width: 20,
+                          height: 20,
+                          child: _speedometerAnimations3?.buildAnimationBody(
+                              monthColors.aprColor,
+                              Container(
+                                width: 12,
+                                height: 12,
+                                child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: Circle4(),
+                                ),
+                              )),
+                        ),
+                      ),
+                      //// circle-5
+
+                      Positioned(
+                        bottom: 92,
+                        left: 112,
+                        child: Container(
+                          width: 20,
+                          height: 20,
+                          child: _speedometerAnimations4?.buildAnimationBody(
+                              monthColors.mayColor,
+                              Container(
+                                width: 12,
+                                height: 12,
+                                child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: Circle5(),
+                                ),
+                              )),
+                        ),
+                      ),
+                      //// circle-6
+                      Positioned(
+                        bottom: 96,
+                        left: 140,
+                        child: Container(
+                          width: 20,
+                          height: 20,
+                          child: _speedometerAnimations5?.buildAnimationBody(
+                              monthColors.junColor,
+                              Container(
+                                width: 12,
+                                height: 12,
+                                child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: Circle6(),
+                                ),
+                              )),
+                        ),
+                      ),
+                      //// circle-7
+                      Positioned(
+                        bottom: 96,
+                        left: 165,
+                        child: Container(
+                          width: 20,
+                          height: 20,
+                          child: _speedometerAnimations6?.buildAnimationBody(
+                              monthColors.julColor,
+                              Container(
+                                width: 12,
+                                height: 12,
+                                child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: Circle7(),
+                                ),
+                              )),
+                        ),
+                      ),
+                      //// circle-8
+                      Positioned(
+                        bottom: 92,
+                        left: 193,
+                        child: Container(
+                          width: 20,
+                          height: 20,
+                          child: _speedometerAnimations7?.buildAnimationBody(
+                              monthColors.augColor,
+                              Container(
+                                width: 12,
+                                height: 12,
+                                child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: Circle8(),
+                                ),
+                              )),
+                        ),
+                      ),
+                      //// circle-9
+                      Positioned(
+                        bottom: 83,
+                        left: 219,
+                        child: Container(
+                          width: 20,
+                          height: 20,
+                          child: _speedometerAnimations8?.buildAnimationBody(
+                              monthColors.sepColor,
+                              Container(
+                                width: 12,
+                                height: 12,
+                                child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: Circle9(),
+                                ),
+                              )),
+                        ),
+                      ),
+                      //// circle-10
+                      Positioned(
+                        bottom: 70,
+                        left: 245,
+                        child: Container(
+                          width: 20,
+                          height: 20,
+                          child: _speedometerAnimations9?.buildAnimationBody(
+                              monthColors.octColor,
+                              Container(
+                                width: 12,
+                                height: 12,
+                                child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: Circle10(),
+                                ),
+                              )),
+                        ),
+                      ),
+
+                      //// circle-11
+
+                      Positioned(
+                        bottom: 49,
+                        left: 272,
+                        child: Container(
+                          width: 20,
+                          height: 20,
+                          child: _speedometerAnimations10?.buildAnimationBody(
+                              monthColors.novColor,
+                              Container(
+                                width: 12,
+                                height: 12,
+                                child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: Circle11(),
+                                ),
+                              )),
+                        ),
+                      ),
+                      //// circle-12
+                      Positioned(
+                        bottom: 22,
+                        left: 293,
+                        child: Container(
+                          width: 20,
+                          height: 20,
+                          child: _speedometerAnimations11?.buildAnimationBody(
+                              monthColors.decColor,
+                              Container(
+                                width: 12,
+                                height: 12,
+                                child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: Circle12(),
+                                ),
+                              )),
+                        ),
+                      ),
+                      //Jan-btn
+
+                      Positioned(
+                        bottom: 6,
+                        left: 25.6,
+                        child: Container(
+                          width: 28,
+                          height: 30,
+                          child: GestureDetector(
+                            onTap: () {
+                              onClickJan();
+                              startAnimation(_controller);
+                            },
+                            child: MouseRegion(
+                              cursor: SystemMouseCursors.click,
+                              child: CustomPaint(
+                                size: Size(
+                                    100,
+                                    (100 * 1.0539226769161203)
+                                        .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                painter: January(),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      ////feb-btn
+
+                      Positioned(
+                        bottom: 28,
+                        left: 45,
+                        child: Container(
+                          width: 22,
+                          height: 26,
+                          child: GestureDetector(
+                            onTap: () {
+                              onClickFeb();
+                              startAnimation(_controller1);
+                            },
+                            child: MouseRegion(
+                              cursor: SystemMouseCursors.click,
+                              child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: Febuary()),
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      ///mar-btn
+
+                      Positioned(
+                        bottom: 41.2,
+                        left: 66,
+                        child: Container(
+                          width: 24,
+                          height: 29,
+                          child: GestureDetector(
+                            onTap: () {
+                              onClickMar();
+                              startAnimation(_controller2);
+                            },
+                            child: MouseRegion(
+                              cursor: SystemMouseCursors.click,
+                              child: CustomPaint(
+                                  size: Size(
+                                      180,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: March()),
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      ///// apr-btn
+
+                      Positioned(
+                        bottom: 57.2,
+                        left: 86.5,
+                        child: Container(
+                          width: 28,
+                          height: 23,
+                          child: GestureDetector(
+                            onTap: () {
+                              onClickApr();
+                              startAnimation(_controller3);
+                            },
+                            child: MouseRegion(
+                              cursor: SystemMouseCursors.click,
+                              child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: April()),
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      ///may-btn
+
+                      Positioned(
+                        bottom: 69.4,
+                        left: 113.5,
+                        child: Container(
+                          width: 24,
+                          height: 19,
+                          child: GestureDetector(
+                            onTap: () {
+                              onClickMay();
+                              startAnimation(_controller4);
+                            },
+                            child: MouseRegion(
+                              cursor: SystemMouseCursors.click,
+                              child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: May()),
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      ///Jun-btn
+
+                      Positioned(
+                        bottom: 75.5,
+                        left: 137.3,
+                        child: Container(
+                          width: 23.5,
+                          height: 17,
+                          child: GestureDetector(
+                            onTap: () {
+                              onClickJun();
+                              startAnimation(_controller5);
+                            },
+                            child: MouseRegion(
+                              cursor: SystemMouseCursors.click,
+                              child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: June()),
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      //// jul-btn
+
+                      Positioned(
+                        bottom: 75.3,
+                        left: 160.3,
+                        child: Container(
+                          width: 25,
+                          height: 17,
+                          child: GestureDetector(
+                            onTap: () {
+                              onClickJul();
+                              startAnimation(_controller6);
+                            },
+                            child: MouseRegion(
+                              cursor: SystemMouseCursors.click,
+                              child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: July()),
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      /// aug-btn
+
+                      Positioned(
+                        bottom: 69,
+                        left: 185,
+                        child: Container(
+                          width: 23,
+                          height: 19.3,
+                          child: GestureDetector(
+                            onTap: () {
+                              onClickAug();
+                              startAnimation(_controller7);
+                            },
+                            child: MouseRegion(
+                              cursor: SystemMouseCursors.click,
+                              child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: Aug()),
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      /// sep-btn
+
+                      Positioned(
+                        bottom: 58.5,
+                        left: 207.5,
+                        child: Container(
+                          width: 23,
+                          height: 22,
+                          child: GestureDetector(
+                            onTap: () {
+                              onClickSep();
+                              startAnimation(_controller8);
+                            },
+                            child: MouseRegion(
+                              cursor: SystemMouseCursors.click,
+                              child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: Sep()),
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      //         //// oct-btn
+
+                      Positioned(
+                        bottom: 41.4,
+                        left: 230.5,
+                        child: Container(
+                          width: 24,
+                          height: 28,
+                          child: GestureDetector(
+                            onTap: () {
+                              onClickOct();
+                              startAnimation(_controller9);
+                            },
+                            child: MouseRegion(
+                              cursor: SystemMouseCursors.click,
+                              child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: Oct()),
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      /// nov-btn
+
+                      Positioned(
+                        bottom: 13.6,
+                        left: 254.5,
+                        child: Container(
+                          width: 25,
+                          height: 40.5,
+                          child: GestureDetector(
+                            onTap: () {
+                              onClickNov();
+                              startAnimation(_controller10);
+                            },
+                            child: MouseRegion(
+                              cursor: SystemMouseCursors.click,
+                              child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: Nov()),
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      //// dec-btn
+                      ///
+                      ///
+                      Positioned(
+                        bottom: 5,
+                        left: 279,
+                        child: Container(
+                          width: 16,
+                          height: 26,
+                          child: GestureDetector(
+                            onTap: () {
+                              onClickDec();
+                              startAnimation(_controller11);
+                            },
+                            child: MouseRegion(
+                              cursor: SystemMouseCursors.click,
+                              child: CustomPaint(
+                                  size: Size(
+                                      100,
+                                      (100 * 1.0539226769161203)
+                                          .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                                  painter: Dec()),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
             ),
-
-            ////febu
-
-            Positioned(
-              bottom: 74,
-              left: 44,
-              child: Container(
-                width: 22,
-                height: 26,
-                child: GestureDetector(
-                  onTap: () {
-                    _toggleAnimation(2, _controller1);
-                  },
-                  child: CustomPaint(
-                      size: Size(
-                          100,
-                          (100 * 1.0539226769161203)
-                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                      painter: Febuary()),
-                ),
-              ),
-            ),
-
-            ///march
-
-            Positioned(
-              bottom: 87,
-              left: 65,
-              child: Container(
-                width: 24,
-                height: 29,
-                child: GestureDetector(
-                  onTap: () {
-                    _toggleAnimation(3, _controller2);
-                  },
-                  child: CustomPaint(
-                      size: Size(
-                          180,
-                          (100 * 1.0539226769161203)
-                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                      painter: March()),
-                ),
-              ),
-            ),
-
-            ///// april
-
-            Positioned(
-              bottom: 103,
-              left: 85.5,
-              child: Container(
-                width: 28,
-                height: 23,
-                child: GestureDetector(
-                  onTap: () {
-                    _toggleAnimation(4, _controller3);
-                  },
-                  child: CustomPaint(
-                      size: Size(
-                          100,
-                          (100 * 1.0539226769161203)
-                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                      painter: April()),
-                ),
-              ),
-            ),
-
-            ///may
-
-            Positioned(
-              bottom: 115,
-              left: 112,
-              child: Container(
-                width: 24,
-                height: 19,
-                child: GestureDetector(
-                  onTap: () {
-                    _toggleAnimation(5, _controller4);
-                  },
-                  child: CustomPaint(
-                      size: Size(
-                          100,
-                          (100 * 1.0539226769161203)
-                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                      painter: May()),
-                ),
-              ),
-            ),
-
-            ///Jun
-
-            Positioned(
-              bottom: 121,
-              left: 135.5,
-              child: Container(
-                width: 23.5,
-                height: 17,
-                child: GestureDetector(
-                  onTap: () {
-                    _toggleAnimation(6, _controller5);
-                  },
-                  child: CustomPaint(
-                      size: Size(
-                          100,
-                          (100 * 1.0539226769161203)
-                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                      painter: June()),
-                ),
-              ),
-            ),
-
-            //// july
-
-            Positioned(
-              bottom: 120.8,
-              left: 158.5,
-              child: Container(
-                width: 25,
-                height: 17,
-                child: GestureDetector(
-                  onTap: () {
-                    _toggleAnimation(7, _controller6);
-                  },
-                  child: CustomPaint(
-                      size: Size(
-                          100,
-                          (100 * 1.0539226769161203)
-                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                      painter: July()),
-                ),
-              ),
-            ),
-
-            /// aug
-
-            Positioned(
-              bottom: 114.5,
-              left: 183.5,
-              child: Container(
-                width: 23,
-                height: 19.3,
-                child: GestureDetector(
-                  onTap: () {
-                    _toggleAnimation(8, _controller7);
-                  },
-                  child: CustomPaint(
-                      size: Size(
-                          100,
-                          (100 * 1.0539226769161203)
-                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                      painter: Aug()),
-                ),
-              ),
-            ),
-
-            /// sep
-
-            Positioned(
-              bottom: 103.7,
-              left: 206.5,
-              child: Container(
-                width: 23,
-                height: 22,
-                child: GestureDetector(
-                  onTap: () {
-                    _toggleAnimation(9, _controller8);
-                  },
-                  child: CustomPaint(
-                      size: Size(
-                          100,
-                          (100 * 1.0539226769161203)
-                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                      painter: Sep()),
-                ),
-              ),
-            ),
-
-            //         //// oct
-
-            Positioned(
-              bottom: 86.5,
-              left: 229.5,
-              child: Container(
-                width: 24,
-                height: 28,
-                child: GestureDetector(
-                  onTap: () {
-                    _toggleAnimation(10, _controller9);
-                  },
-                  child: CustomPaint(
-                      size: Size(
-                          100,
-                          (100 * 1.0539226769161203)
-                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                      painter: Oct()),
-                ),
-              ),
-            ),
-
-            /// nov
-
-            Positioned(
-              bottom: 59,
-              left: 253,
-              child: Container(
-                width: 25,
-                height: 40.5,
-                child: GestureDetector(
-                  onTap: () {
-                    _toggleAnimation(11, _controller10);
-                  },
-                  child: CustomPaint(
-                      size: Size(
-                          100,
-                          (100 * 1.0539226769161203)
-                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                      painter: Nov()),
-                ),
-              ),
-            ),
-
-            //// dec
-            ///
-            ///
-            Positioned(
-              bottom: 50,
-              left: 278,
-              child: Container(
-                width: 16,
-                height: 26,
-                child: GestureDetector(
-                  onTap: () {
-                    _toggleAnimation(12, _controller11);
-                  },
-                  child: CustomPaint(
-                      size: Size(
-                          100,
-                          (100 * 1.0539226769161203)
-                              .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                      painter: Dec()),
-                ),
-              ),
-            ),
-          ],
+          ),
         ),
-      ),
+      ],
     );
-  }
-}
-
-/// circle6
-///
-///
-///
-class Circle6 extends CustomPainter {
-  @override
-  void paint(Canvas canvas, Size size) {
-    Path path_0 = Path();
-    path_0.moveTo(size.width * 1.030696, size.height * 0.5250079);
-    path_0.arcToPoint(Offset(size.width * 0.03164557, size.height * 0.5360874),
-        radius:
-            Radius.elliptical(size.width * 0.4998418, size.height * 0.5000000),
-        rotation: 0,
-        largeArc: false,
-        clockwise: false);
-    path_0.cubicTo(
-        size.width * 0.03164557,
-        size.height * 0.5528648,
-        size.width * 0.03164557,
-        size.height * 0.5698006,
-        size.width * 0.03354430,
-        size.height * 0.5856284);
-    path_0.arcToPoint(Offset(size.width * 0.05221519, size.height * 0.6805951),
-        radius:
-            Radius.elliptical(size.width * 0.4848101, size.height * 0.4849636),
-        rotation: 0,
-        largeArc: false,
-        clockwise: false);
-    path_0.arcToPoint(Offset(size.width * 1.031013, size.height * 0.5364039),
-        radius:
-            Radius.elliptical(size.width * 0.5001582, size.height * 0.5003166),
-        rotation: 0,
-        largeArc: false,
-        clockwise: false);
-    path_0.cubicTo(
-        size.width * 1.031013,
-        size.height * 0.5322887,
-        size.width * 1.031013,
-        size.height * 0.5288066,
-        size.width * 1.030696,
-        size.height * 0.5250079);
-    path_0.close();
-    path_0.moveTo(size.width * 0.7753165, size.height * 0.5360874);
-    path_0.arcToPoint(Offset(size.width * 0.7560127, size.height * 0.6310541),
-        radius:
-            Radius.elliptical(size.width * 0.2466772, size.height * 0.2467553),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
-    path_0.arcToPoint(Offset(size.width * 0.3200949, size.height * 0.6579614),
-        radius:
-            Radius.elliptical(size.width * 0.2441456, size.height * 0.2442229),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
-    path_0.arcToPoint(Offset(size.width * 0.2892405, size.height * 0.5645774),
-        radius:
-            Radius.elliptical(size.width * 0.2373418, size.height * 0.2374169),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
-    path_0.arcToPoint(Offset(size.width * 0.2873418, size.height * 0.5354543),
-        radius:
-            Radius.elliptical(size.width * 0.2215190, size.height * 0.2215891),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
-    path_0.arcToPoint(Offset(size.width * 0.7753165, size.height * 0.5354543),
-        radius:
-            Radius.elliptical(size.width * 0.2439873, size.height * 0.2440646),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
-    path_0.close();
-
-    Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color = Color(0xff876ae3).withOpacity(1.0);
-    canvas.drawPath(path_0, paint_0_fill);
-
-    Path path_1 = Path();
-    path_1.moveTo(size.width * 0.7753165, size.height * 0.5354543);
-    path_1.lineTo(size.width * 0.7753165, size.height * 0.5354543);
-    path_1.arcToPoint(Offset(size.width * 0.7560127, size.height * 0.6304210),
-        radius:
-            Radius.elliptical(size.width * 0.2466772, size.height * 0.2467553),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
-    path_1.arcToPoint(Offset(size.width * 0.3200949, size.height * 0.6573283),
-        radius:
-            Radius.elliptical(size.width * 0.2441456, size.height * 0.2442229),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
-    path_1.arcToPoint(Offset(size.width * 0.2892405, size.height * 0.5639443),
-        radius:
-            Radius.elliptical(size.width * 0.2373418, size.height * 0.2374169),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
-    path_1.arcToPoint(Offset(size.width * 0.2873418, size.height * 0.5348211),
-        radius:
-            Radius.elliptical(size.width * 0.2215190, size.height * 0.2215891),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
-    path_1.arcToPoint(Offset(size.width * 0.7753165, size.height * 0.5348211),
-        radius:
-            Radius.elliptical(size.width * 0.2439873, size.height * 0.2440646),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
-    path_1.close();
-
-    Paint paint_1_fill = Paint()..style = PaintingStyle.fill;
-    paint_1_fill.color = Color(0xffffffff).withOpacity(1.0);
-    canvas.drawPath(path_1, paint_1_fill);
-  }
-
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    return true;
   }
 }
