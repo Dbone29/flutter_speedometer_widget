@@ -5,7 +5,59 @@ import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 
 class speedometer extends StatefulWidget {
-  const speedometer({super.key});
+  const speedometer({
+    Key? key,
+    this.isPlaying = false,
+    this.isPlaying1 = false,
+    this.isPlaying2 = false,
+    this.isPlaying3 = false,
+    this.isPlaying4 = false,
+    this.isPlaying5 = false,
+    this.isPlaying6 = false,
+    this.isPlaying7 = false,
+    this.isPlaying8 = false,
+    this.isPlaying9 = false,
+    this.isPlaying10 = false,
+    this.isPlaying11 = false,
+    required this.onClickJan,
+    required this.onClickFeb,
+    required this.onClickMar,
+    required this.onClickApr,
+    required this.onClickMay,
+    required this.onClickJun,
+    required this.onClickJul,
+    required this.onClickAug,
+    required this.onClickSep,
+    required this.onClickOct,
+    required this.onClickNov,
+    required this.onClickDec,
+  }) : super(key: key);
+
+  final bool isPlaying;
+  final bool isPlaying1;
+  final bool isPlaying2;
+  final bool isPlaying3;
+  final bool isPlaying4;
+  final bool isPlaying5;
+  final bool isPlaying6;
+  final bool isPlaying7;
+  final bool isPlaying8;
+  final bool isPlaying9;
+  final bool isPlaying10;
+  final bool isPlaying11;
+
+  final void Function() onClickJan;
+  final void Function() onClickFeb;
+  final void Function() onClickMar;
+  final void Function() onClickApr;
+  final void Function() onClickMay;
+  final void Function() onClickJun;
+  final void Function() onClickJul;
+  final void Function() onClickAug;
+  final void Function() onClickSep;
+  final void Function() onClickOct;
+  final void Function() onClickNov;
+  final void Function() onClickDec;
 
   @override
   State<speedometer> createState() => _speedometerState();
@@ -51,55 +103,6 @@ class _speedometerState extends State<speedometer>
   bool _isPlaying9 = false;
   bool _isPlaying10 = false;
   bool _isPlaying11 = false;
-
-  void onClickJan() {
-    print("January Button Clicked");
-    // functions for you
-  }
-
-  void onClickFeb() {
-    print("Febuary Button Clicked");
-  }
-
-  void onClickMar() {
-    print("March Button Clicked");
-  }
-
-  void onClickApr() {
-    print("April Button Clicked");
-  }
-
-  void onClickMay() {
-    print("May Button Clicked");
-  }
-
-  void onClickJun() {
-    print("June Button Clicked");
-  }
-
-  void onClickJul() {
-    print("July Button Clicked");
-  }
-
-  void onClickAug() {
-    print("August Button Clicked");
-  }
-
-  void onClickSep() {
-    print("September Button Clicked");
-  }
-
-  void onClickOct() {
-    print("October Button Clicked");
-  }
-
-  void onClickNov() {
-    print("November Button Clicked");
-  }
-
-  void onClickDec() {
-    print("December Button Clicked");
-  }
 
 //// Color picker setting
 
@@ -1446,7 +1449,7 @@ class _speedometerState extends State<speedometer>
                           height: 30,
                           child: GestureDetector(
                             onTap: () {
-                              onClickJan();
+                              widget.onClickJan();
                               startAnimation(_controller);
                             },
                             child: MouseRegion(
@@ -1473,7 +1476,7 @@ class _speedometerState extends State<speedometer>
                           height: 26,
                           child: GestureDetector(
                             onTap: () {
-                              onClickFeb();
+                              widget.onClickFeb();
                               startAnimation(_controller1);
                             },
                             child: MouseRegion(
@@ -1499,7 +1502,7 @@ class _speedometerState extends State<speedometer>
                           height: 29,
                           child: GestureDetector(
                             onTap: () {
-                              onClickMar();
+                              widget.onClickMar();
                               startAnimation(_controller2);
                             },
                             child: MouseRegion(
@@ -1525,7 +1528,7 @@ class _speedometerState extends State<speedometer>
                           height: 23,
                           child: GestureDetector(
                             onTap: () {
-                              onClickApr();
+                              widget.onClickApr();
                               startAnimation(_controller3);
                             },
                             child: MouseRegion(
@@ -1551,7 +1554,7 @@ class _speedometerState extends State<speedometer>
                           height: 19,
                           child: GestureDetector(
                             onTap: () {
-                              onClickMay();
+                              widget.onClickMay();
                               startAnimation(_controller4);
                             },
                             child: MouseRegion(
@@ -1577,7 +1580,7 @@ class _speedometerState extends State<speedometer>
                           height: 17,
                           child: GestureDetector(
                             onTap: () {
-                              onClickJun();
+                              widget.onClickJun();
                               startAnimation(_controller5);
                             },
                             child: MouseRegion(
@@ -1603,7 +1606,7 @@ class _speedometerState extends State<speedometer>
                           height: 17,
                           child: GestureDetector(
                             onTap: () {
-                              onClickJul();
+                              widget.onClickJul();
                               startAnimation(_controller6);
                             },
                             child: MouseRegion(
@@ -1629,7 +1632,7 @@ class _speedometerState extends State<speedometer>
                           height: 19.3,
                           child: GestureDetector(
                             onTap: () {
-                              onClickAug();
+                              widget.onClickAug();
                               startAnimation(_controller7);
                             },
                             child: MouseRegion(
@@ -1655,7 +1658,7 @@ class _speedometerState extends State<speedometer>
                           height: 22,
                           child: GestureDetector(
                             onTap: () {
-                              onClickSep();
+                              widget.onClickSep();
                               startAnimation(_controller8);
                             },
                             child: MouseRegion(
@@ -1681,7 +1684,7 @@ class _speedometerState extends State<speedometer>
                           height: 28,
                           child: GestureDetector(
                             onTap: () {
-                              onClickOct();
+                              widget.onClickOct();
                               startAnimation(_controller9);
                             },
                             child: MouseRegion(
@@ -1707,7 +1710,7 @@ class _speedometerState extends State<speedometer>
                           height: 40.5,
                           child: GestureDetector(
                             onTap: () {
-                              onClickNov();
+                              widget.onClickNov();
                               startAnimation(_controller10);
                             },
                             child: MouseRegion(
@@ -1734,7 +1737,7 @@ class _speedometerState extends State<speedometer>
                           height: 26,
                           child: GestureDetector(
                             onTap: () {
-                              onClickDec();
+                              widget.onClickDec;
                               startAnimation(_controller11);
                             },
                             child: MouseRegion(
