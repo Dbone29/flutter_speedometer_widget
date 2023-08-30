@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   bool isPlaying10 = false;
   bool isPlaying11 = false;
 
-  Color janColor = Color.fromARGB(255, 0, 0, 0);
+  Color janColor = Color.fromARGB(255, 255, 236, 166);
   Color febColor = Color.fromARGB(255, 255, 162, 0);
   Color marColor = Color.fromARGB(255, 247, 178, 58);
   Color aprColor = Color(0xDD8479);
