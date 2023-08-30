@@ -2,23 +2,22 @@ import 'package:custom_widget_speedometer/constants.dart';
 import 'package:custom_widget_speedometer/customPaints.dart';
 import 'package:custom_widget_speedometer/speedometer_animation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 
 class speedometer extends StatefulWidget {
   const speedometer({
     Key? key,
-    this.isPlaying = false,
-    this.isPlaying1 = false,
-    this.isPlaying2 = false,
-    this.isPlaying3 = false,
-    this.isPlaying4 = false,
-    this.isPlaying5 = false,
-    this.isPlaying6 = false,
-    this.isPlaying7 = false,
-    this.isPlaying8 = false,
-    this.isPlaying9 = false,
-    this.isPlaying10 = false,
-    this.isPlaying11 = false,
+    required this.isPlaying,
+    required this.isPlaying1,
+    required this.isPlaying2,
+    required this.isPlaying3,
+    required this.isPlaying4,
+    required this.isPlaying5,
+    required this.isPlaying6,
+    required this.isPlaying7,
+    required this.isPlaying8,
+    required this.isPlaying9,
+    required this.isPlaying10,
+    required this.isPlaying11,
     required this.onClickJan,
     required this.onClickFeb,
     required this.onClickMar,
@@ -31,6 +30,18 @@ class speedometer extends StatefulWidget {
     required this.onClickOct,
     required this.onClickNov,
     required this.onClickDec,
+    required this.janColor,
+    required this.febColor,
+    required this.marColor,
+    required this.aprColor,
+    required this.mayColor,
+    required this.junColor,
+    required this.julColor,
+    required this.augColor,
+    required this.sepColor,
+    required this.octColor,
+    required this.novColor,
+    required this.decColor,
   }) : super(key: key);
 
   final bool isPlaying;
@@ -45,6 +56,19 @@ class speedometer extends StatefulWidget {
   final bool isPlaying9;
   final bool isPlaying10;
   final bool isPlaying11;
+
+  final Color janColor;
+  final Color febColor;
+  final Color marColor;
+  final Color aprColor;
+  final Color mayColor;
+  final Color junColor;
+  final Color julColor;
+  final Color augColor;
+  final Color sepColor;
+  final Color octColor;
+  final Color novColor;
+  final Color decColor;
 
   final void Function() onClickJan;
   final void Function() onClickFeb;
@@ -90,395 +114,6 @@ class _speedometerState extends State<speedometer>
   SpeedometerAnimations? _speedometerAnimations9;
   SpeedometerAnimations? _speedometerAnimations10;
   SpeedometerAnimations? _speedometerAnimations11;
-
-  bool _isPlaying = false;
-  bool _isPlaying1 = false;
-  bool _isPlaying2 = false;
-  bool _isPlaying3 = false;
-  bool _isPlaying4 = false;
-  bool _isPlaying5 = false;
-  bool _isPlaying6 = false;
-  bool _isPlaying7 = false;
-  bool _isPlaying8 = false;
-  bool _isPlaying9 = false;
-  bool _isPlaying10 = false;
-  bool _isPlaying11 = false;
-
-//// Color picker setting
-
-  void _changeColor1(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Pick a color for Container 1'),
-          content: SingleChildScrollView(
-            child: ColorPicker(
-              pickerColor: monthColors.janColor,
-              onColorChanged: (Color newColor) {
-                setState(() {
-                  monthColors.janColor = newColor;
-                });
-              },
-              showLabel: true,
-              pickerAreaHeightPercent: 0.8,
-            ),
-          ),
-          actions: <Widget>[
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: const Text('Done'),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void _changeColor2(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Pick a color for Container 1'),
-          content: SingleChildScrollView(
-            child: ColorPicker(
-              pickerColor: monthColors.febColor,
-              onColorChanged: (Color newColor) {
-                setState(() {
-                  monthColors.febColor = newColor;
-                });
-              },
-              showLabel: true,
-              pickerAreaHeightPercent: 0.8,
-            ),
-          ),
-          actions: <Widget>[
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: const Text('Done'),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void _changeColor3(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Pick a color for Container 1'),
-          content: SingleChildScrollView(
-            child: ColorPicker(
-              pickerColor: monthColors.marColor,
-              onColorChanged: (Color newColor) {
-                setState(() {
-                  monthColors.marColor = newColor;
-                });
-              },
-              showLabel: true,
-              pickerAreaHeightPercent: 0.8,
-            ),
-          ),
-          actions: <Widget>[
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: const Text('Done'),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void _changeColor4(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Pick a color for Container 1'),
-          content: SingleChildScrollView(
-            child: ColorPicker(
-              pickerColor: monthColors.aprColor,
-              onColorChanged: (Color newColor) {
-                setState(() {
-                  monthColors.aprColor = newColor;
-                });
-              },
-              showLabel: true,
-              pickerAreaHeightPercent: 0.8,
-            ),
-          ),
-          actions: <Widget>[
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: const Text('Done'),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void _changeColor5(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Pick a color for Container 1'),
-          content: SingleChildScrollView(
-            child: ColorPicker(
-              pickerColor: monthColors.mayColor,
-              onColorChanged: (Color newColor) {
-                setState(() {
-                  monthColors.mayColor = newColor;
-                });
-              },
-              showLabel: true,
-              pickerAreaHeightPercent: 0.8,
-            ),
-          ),
-          actions: <Widget>[
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: const Text('Done'),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void _changeColor6(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Pick a color for Container 1'),
-          content: SingleChildScrollView(
-            child: ColorPicker(
-              pickerColor: monthColors.junColor,
-              onColorChanged: (Color newColor) {
-                setState(() {
-                  monthColors.junColor = newColor;
-                });
-              },
-              showLabel: true,
-              pickerAreaHeightPercent: 0.8,
-            ),
-          ),
-          actions: <Widget>[
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: const Text('Done'),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void _changeColor7(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Pick a color for Container 1'),
-          content: SingleChildScrollView(
-            child: ColorPicker(
-              pickerColor: monthColors.julColor,
-              onColorChanged: (Color newColor) {
-                setState(() {
-                  monthColors.julColor = newColor;
-                });
-              },
-              showLabel: true,
-              pickerAreaHeightPercent: 0.8,
-            ),
-          ),
-          actions: <Widget>[
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: const Text('Done'),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void _changeColor8(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Pick a color for Container 1'),
-          content: SingleChildScrollView(
-            child: ColorPicker(
-              pickerColor: monthColors.augColor,
-              onColorChanged: (Color newColor) {
-                setState(() {
-                  monthColors.augColor = newColor;
-                });
-              },
-              showLabel: true,
-              pickerAreaHeightPercent: 0.8,
-            ),
-          ),
-          actions: <Widget>[
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: const Text('Done'),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void _changeColor9(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Pick a color for Container 1'),
-          content: SingleChildScrollView(
-            child: ColorPicker(
-              pickerColor: monthColors.sepColor,
-              onColorChanged: (Color newColor) {
-                setState(() {
-                  monthColors.sepColor = newColor;
-                });
-              },
-              showLabel: true,
-              pickerAreaHeightPercent: 0.8,
-            ),
-          ),
-          actions: <Widget>[
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: const Text('Done'),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void _changeColor10(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Pick a color for Container 1'),
-          content: SingleChildScrollView(
-            child: ColorPicker(
-              pickerColor: monthColors.octColor,
-              onColorChanged: (Color newColor) {
-                setState(() {
-                  monthColors.octColor = newColor;
-                });
-              },
-              showLabel: true,
-              pickerAreaHeightPercent: 0.8,
-            ),
-          ),
-          actions: <Widget>[
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: const Text('Done'),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void _changeColor11(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Pick a color for Container 1'),
-          content: SingleChildScrollView(
-            child: ColorPicker(
-              pickerColor: monthColors.novColor,
-              onColorChanged: (Color newColor) {
-                setState(() {
-                  monthColors.novColor = newColor;
-                });
-              },
-              showLabel: true,
-              pickerAreaHeightPercent: 0.8,
-            ),
-          ),
-          actions: <Widget>[
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: const Text('Done'),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void _changeColor12(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Pick a color for Container 1'),
-          content: SingleChildScrollView(
-            child: ColorPicker(
-              pickerColor: monthColors.decColor,
-              onColorChanged: (Color newColor) {
-                setState(() {
-                  monthColors.decColor = newColor;
-                });
-              },
-              showLabel: true,
-              pickerAreaHeightPercent: 0.8,
-            ),
-          ),
-          actions: <Widget>[
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: const Text('Done'),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-/////
 
   @override
   void initState() {
@@ -596,169 +231,111 @@ class _speedometerState extends State<speedometer>
   }
 
   /// triggering animation
+  void buttonColors() {
+    monthColors.janColor = widget.janColor;
+    monthColors.febColor = widget.febColor;
+    monthColors.marColor = widget.marColor;
+    monthColors.aprColor = widget.aprColor;
+    monthColors.mayColor = widget.mayColor;
+    monthColors.junColor = widget.junColor;
+    monthColors.julColor = widget.julColor;
+    monthColors.augColor = widget.augColor;
+    monthColors.sepColor = widget.sepColor;
+    monthColors.octColor = widget.octColor;
+    monthColors.novColor = widget.novColor;
+    monthColors.decColor = widget.decColor;
+  }
 
-  void _toggleAnimation(choice, ctrl) {
-    switch (choice) {
-      case 1:
-        setState(() {
-          _isPlaying = !_isPlaying;
-        });
+  void boolAnimation() {
+    if (widget.isPlaying) {
+      _controller.repeat();
+    } else {
+      _controller.forward(from: 0.0);
+      _controller.stop();
+    }
 
-        if (_isPlaying) {
-          ctrl.repeat();
-        } else {
-          ctrl.forward(from: 0.0);
-          ctrl.stop();
-        }
+    if (widget.isPlaying1) {
+      _controller1.repeat();
+    } else {
+      _controller1.forward(from: 0.0);
+      _controller1.stop();
+    }
 
-        break;
-      case 2:
-        setState(() {
-          _isPlaying1 = !_isPlaying1;
-        });
+    if (widget.isPlaying2) {
+      _controller2.repeat();
+    } else {
+      _controller2.forward(from: 0.0);
+      _controller2.stop();
+    }
 
-        if (_isPlaying1) {
-          ctrl.repeat();
-        } else {
-          ctrl.forward(from: 0.0);
-          ctrl.stop();
-        }
+    if (widget.isPlaying3) {
+      _controller3.repeat();
+    } else {
+      _controller3.forward(from: 0.0);
+      _controller3.stop();
+    }
 
-        break;
-      case 3:
-        setState(() {
-          _isPlaying2 = !_isPlaying2;
-        });
+    if (widget.isPlaying4) {
+      _controller4.repeat();
+    } else {
+      _controller4.forward(from: 0.0);
+      _controller4.stop();
+    }
 
-        if (_isPlaying2) {
-          ctrl.repeat();
-        } else {
-          ctrl.forward(from: 0.0);
-          ctrl.stop();
-        }
+    if (widget.isPlaying5) {
+      _controller5.repeat();
+    } else {
+      _controller5.forward(from: 0.0);
+      _controller5.stop();
+    }
 
-        break;
-      case 4:
-        setState(() {
-          _isPlaying3 = !_isPlaying3;
-        });
+    if (widget.isPlaying6) {
+      _controller6.repeat();
+    } else {
+      _controller6.forward(from: 0.0);
+      _controller6.stop();
+    }
 
-        if (_isPlaying3) {
-          ctrl.repeat();
-        } else {
-          ctrl.forward(from: 0.0);
-          ctrl.stop();
-        }
+    if (widget.isPlaying7) {
+      _controller7.repeat();
+    } else {
+      _controller7.forward(from: 0.0);
+      _controller7.stop();
+    }
 
-        break;
-      case 5:
-        setState(() {
-          _isPlaying4 = !_isPlaying4;
-        });
+    if (widget.isPlaying8) {
+      _controller8.repeat();
+    } else {
+      _controller8.forward(from: 0.0);
+      _controller8.stop();
+    }
 
-        if (_isPlaying4) {
-          ctrl.repeat();
-        } else {
-          ctrl.forward(from: 0.0);
-          ctrl.stop();
-        }
+    if (widget.isPlaying9) {
+      _controller9.repeat();
+    } else {
+      _controller9.forward(from: 0.0);
+      _controller9.stop();
+    }
 
-        break;
-      case 6:
-        setState(() {
-          _isPlaying5 = !_isPlaying5;
-        });
+    if (widget.isPlaying10) {
+      _controller10.repeat();
+    } else {
+      _controller10.forward(from: 0.0);
+      _controller10.stop();
+    }
 
-        if (_isPlaying5) {
-          ctrl.repeat();
-        } else {
-          ctrl.forward(from: 0.0);
-          ctrl.stop();
-        }
-      case 7:
-        setState(() {
-          _isPlaying6 = !_isPlaying6;
-        });
-
-        if (_isPlaying6) {
-          ctrl.repeat();
-        } else {
-          ctrl.forward(from: 0.0);
-          ctrl.stop();
-        }
-
-        break;
-      case 8:
-        setState(() {
-          _isPlaying7 = !_isPlaying7;
-        });
-
-        if (_isPlaying7) {
-          ctrl.repeat();
-        } else {
-          ctrl.forward(from: 0.0);
-          ctrl.stop();
-        }
-
-        break;
-      case 9:
-        setState(() {
-          _isPlaying8 = !_isPlaying8;
-        });
-
-        if (_isPlaying8) {
-          ctrl.repeat();
-        } else {
-          ctrl.forward(from: 0.0);
-          ctrl.stop();
-        }
-
-        break;
-      case 10:
-        setState(() {
-          _isPlaying9 = !_isPlaying9;
-        });
-
-        if (_isPlaying9) {
-          ctrl.repeat();
-        } else {
-          ctrl.forward(from: 0.0);
-          ctrl.stop();
-        }
-
-        break;
-      case 11:
-        setState(() {
-          _isPlaying10 = !_isPlaying10;
-        });
-
-        if (_isPlaying10) {
-          ctrl.repeat();
-        } else {
-          ctrl.forward(from: 0.0);
-          ctrl.stop();
-        }
-
-        break;
-      case 12:
-        setState(() {
-          _isPlaying11 = !_isPlaying11;
-        });
-
-        if (_isPlaying11) {
-          ctrl.repeat();
-        } else {
-          ctrl.forward(from: 0.0);
-          ctrl.stop();
-        }
-
-        break;
-      default:
+    if (widget.isPlaying11) {
+      _controller11.repeat();
+    } else {
+      _controller11.forward(from: 0.0);
+      _controller11.stop();
     }
   }
 
   @override
   Widget build(BuildContext context) {
+    boolAnimation();
+    buttonColors();
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
 
@@ -775,349 +352,10 @@ class _speedometerState extends State<speedometer>
 
     return Stack(
       children: [
-        Row(
-          children: [
-            Column(
-              children: [
-                //// jan button
-
-                Row(
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 1,
-                            vertical:
-                                1), // Adjust padding to change button size
-                        textStyle: TextStyle(fontSize: 11), // Adjust text size
-                      ),
-                      onPressed: () => _changeColor1(context),
-                      child: Text('January Color'),
-                    ),
-                    Switch(
-                        value: _isPlaying,
-                        onChanged: ((value) {
-                          _toggleAnimation(1, _controller);
-                          setState(() {
-                            _isPlaying = value;
-                          });
-                        }))
-                  ],
-                ),
-
-                ///
-                ///
-                //// feb button
-                ///
-                ///
-                Row(
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 1,
-                            vertical:
-                                1), // Adjust padding to change button size
-                        textStyle: TextStyle(fontSize: 11), // Adjust text size
-                      ),
-                      onPressed: () => _changeColor2(context),
-                      child: Text('Febuary Color'),
-                    ),
-                    Switch(
-                        value: _isPlaying1,
-                        onChanged: ((value) {
-                          _toggleAnimation(2, _controller1);
-                          setState(() {
-                            _isPlaying1 = value;
-                          });
-                        }))
-                  ],
-                ),
-
-                //// mar button
-
-                Row(
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 1,
-                            vertical:
-                                1), // Adjust padding to change button size
-                        textStyle: TextStyle(fontSize: 11), // Adjust text size
-                      ),
-                      onPressed: () => _changeColor3(context),
-                      child: Text('March Color   '),
-                    ),
-                    Switch(
-                        value: _isPlaying2,
-                        onChanged: ((value) {
-                          _toggleAnimation(3, _controller2);
-                          setState(() {
-                            _isPlaying2 = value;
-                          });
-                        }))
-                  ],
-                ),
-
-                /// 4th april button
-                Row(
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 1,
-                            vertical:
-                                1), // Adjust padding to change button size
-                        textStyle: TextStyle(fontSize: 11), // Adjust text size
-                      ),
-                      onPressed: () => _changeColor4(context),
-                      child: Text('April Color'),
-                    ),
-                    Switch(
-                        value: _isPlaying3,
-                        onChanged: ((value) {
-                          _toggleAnimation(4, _controller3);
-                          setState(() {
-                            _isPlaying3 = value;
-                          });
-                        }))
-                  ],
-                ),
-              ],
-            ),
-
-            /// Column 2, from May
-            ///
-
-            ///
-            /// 5th May button
-            ///
-
-            Column(
-              children: [
-                Row(
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 1,
-                            vertical:
-                                1), // Adjust padding to change button size
-                        textStyle: TextStyle(fontSize: 11), // Adjust text size
-                      ),
-                      onPressed: () => _changeColor5(context),
-                      child: Text('May Color'),
-                    ),
-                    Switch(
-                        value: _isPlaying4,
-                        onChanged: ((value) {
-                          _toggleAnimation(5, _controller4);
-                          setState(() {
-                            _isPlaying4 = value;
-                          });
-                        }))
-                  ],
-                ),
-
-                /// 6th June button
-
-                Row(
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 1,
-                            vertical:
-                                1), // Adjust padding to change button size
-                        textStyle: TextStyle(fontSize: 11), // Adjust text size
-                      ),
-                      onPressed: () => _changeColor6(context),
-                      child: Text('June Color'),
-                    ),
-                    Switch(
-                        value: _isPlaying5,
-                        onChanged: ((value) {
-                          _toggleAnimation(6, _controller5);
-                          setState(() {
-                            _isPlaying5 = value;
-                          });
-                        }))
-                  ],
-                ),
-
-                /// 7th July button
-                ///
-
-                Row(
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 1,
-                            vertical:
-                                1), // Adjust padding to change button size
-                        textStyle: TextStyle(fontSize: 11), // Adjust text size
-                      ),
-                      onPressed: () => _changeColor7(context),
-                      child: Text('July Color   '),
-                    ),
-                    Switch(
-                        value: _isPlaying6,
-                        onChanged: ((value) {
-                          _toggleAnimation(7, _controller6);
-                          setState(() {
-                            _isPlaying6 = value;
-                          });
-                        }))
-                  ],
-                ),
-
-                /// 8th Aug button
-                Row(
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 1,
-                            vertical:
-                                1), // Adjust padding to change button size
-                        textStyle: TextStyle(fontSize: 11), // Adjust text size
-                      ),
-                      onPressed: () => _changeColor8(context),
-                      child: Text('August Color'),
-                    ),
-                    Switch(
-                        value: _isPlaying7,
-                        onChanged: ((value) {
-                          _toggleAnimation(8, _controller7);
-                          setState(() {
-                            _isPlaying7 = value;
-                          });
-                        }))
-                  ],
-                ),
-              ],
-            ),
-
-            /// Column 3
-
-            Column(
-              children: [
-                ////// 9th Sep button
-
-                Row(
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 1,
-                            vertical:
-                                1), // Adjust padding to change button size
-                        textStyle: TextStyle(fontSize: 11), // Adjust text size
-                      ),
-                      onPressed: () => _changeColor9(context),
-                      child: Text('September Color'),
-                    ),
-                    Switch(
-                        value: _isPlaying8,
-                        onChanged: ((value) {
-                          _toggleAnimation(9, _controller8);
-                          setState(() {
-                            _isPlaying8 = value;
-                          });
-                        }))
-                  ],
-                ),
-
-                ////// 10th Sep button
-
-                Row(
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 1,
-                            vertical:
-                                1), // Adjust padding to change button size
-                        textStyle: TextStyle(fontSize: 11), // Adjust text size
-                      ),
-                      onPressed: () => _changeColor10(context),
-                      child: Text('October Color    '),
-                    ),
-                    Switch(
-                        value: _isPlaying9,
-                        onChanged: ((value) {
-                          _toggleAnimation(10, _controller9);
-                          setState(() {
-                            _isPlaying9 = value;
-                          });
-                        }))
-                  ],
-                ),
-
-                ////// 11th Sep button
-                ///
-
-                Row(
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 1,
-                            vertical:
-                                1), // Adjust padding to change button size
-                        textStyle: TextStyle(fontSize: 11), // Adjust text size
-                      ),
-                      onPressed: () => _changeColor11(context),
-                      child: Text('November Color'),
-                    ),
-                    Switch(
-                        value: _isPlaying10,
-                        onChanged: ((value) {
-                          _toggleAnimation(11, _controller10);
-                          setState(() {
-                            _isPlaying10 = value;
-                          });
-                        }))
-                  ],
-                ),
-
-                /// 12th Dec button
-                ///
-
-                Row(
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 1,
-                            vertical:
-                                1), // Adjust padding to change button size
-                        textStyle: TextStyle(fontSize: 11), // Adjust text size
-                      ),
-                      onPressed: () => _changeColor12(context),
-                      child: Text('December Color'),
-                    ),
-                    Switch(
-                        value: _isPlaying11,
-                        onChanged: ((value) {
-                          _toggleAnimation(12, _controller11);
-                          setState(() {
-                            _isPlaying11 = value;
-                          });
-                        }))
-                  ],
-                ),
-              ],
-            ),
-          ],
-        ),
-
         /// Expand for pushing the widget down
         ///
 
-        Expanded(child: Container()),
+        Expanded(flex: 1, child: Container()),
 
         Align(
           alignment: Alignment.bottomCenter,
@@ -1443,7 +681,7 @@ class _speedometerState extends State<speedometer>
 
                       Positioned(
                         bottom: 6,
-                        left: 25.6,
+                        left: 25.8,
                         child: Container(
                           width: 28,
                           height: 30,
