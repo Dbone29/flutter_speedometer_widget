@@ -137,181 +137,181 @@ class Febuary extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
-    path_0.moveTo(size.width * 0.3680053, size.height * 0.3624468);
-    path_0.lineTo(size.width * 0.1437788, size.height * 0.5210638);
-    path_0.lineTo(size.width * 0.1290323, size.height * 0.3245745);
-    path_0.lineTo(size.width * 0.3680053, size.height * 0.3624468);
+    path_0.moveTo(size.width * 1.014409, size.height * 0.01445205);
+    path_0.lineTo(size.width * 0.9849882, size.height * 0.4709589);
+    path_0.cubicTo(
+        size.width * 0.9849882,
+        size.height * 0.4709589,
+        size.width * 0.5732753,
+        size.height * 0.7101027,
+        size.width * 0.2497336,
+        size.height * 1.014452);
+    path_0.lineTo(size.width * 0.01445582, size.height * 0.6883562);
+    path_0.cubicTo(
+        size.width * 0.01445582,
+        size.height * 0.6883562,
+        size.width * 0.3673725,
+        size.height * 0.3840068,
+        size.width * 1.014409,
+        size.height * 0.01445205);
     path_0.close();
 
     Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color = Color(0xffafb0b2).withOpacity(1.0);
+    paint_0_fill.color = monthColors.febColor.withOpacity(1.0);
     canvas.drawPath(path_0, paint_0_fill);
 
     Path path_1 = Path();
-    path_1.moveTo(size.width * 0.9961817, size.height * 0.003617021);
-    path_1.lineTo(size.width * 0.9698486, size.height * 0.4984043);
-    path_1.arcToPoint(Offset(size.width * 0.3443055, size.height * 1.003617),
-        radius:
-            Radius.elliptical(size.width * 6.902699, size.height * 5.577234),
-        rotation: 0,
-        largeArc: false,
-        clockwise: false);
-    path_1.lineTo(size.width * -0.003686636, size.height * 0.7675532);
-    path_1.arcToPoint(Offset(size.width * 0.9961817, size.height * 0.003617021),
-        radius:
-            Radius.elliptical(size.width * 7.431336, size.height * 6.004362),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
+    path_1.moveTo(size.width * 0.2687300, size.height * 0.6230479);
+    path_1.lineTo(size.width * 0.3583839, size.height * 0.5562671);
+    path_1.lineTo(size.width * 0.3891952, size.height * 0.5787671);
+    path_1.lineTo(size.width * 0.3367465, size.height * 0.6177740);
+    path_1.lineTo(size.width * 0.3626929, size.height * 0.6368151);
+    path_1.lineTo(size.width * 0.4118519, size.height * 0.6002055);
+    path_1.lineTo(size.width * 0.4422925, size.height * 0.6225685);
+    path_1.lineTo(size.width * 0.3931335, size.height * 0.6591781);
+    path_1.lineTo(size.width * 0.4466478, size.height * 0.6984247);
+    path_1.lineTo(size.width * 0.4092573, size.height * 0.7262671);
     path_1.close();
 
     Paint paint_1_fill = Paint()..style = PaintingStyle.fill;
-    paint_1_fill.shader = ui.Gradient.linear(
-        Offset(size.width * -0.3686636, size.height * 0.5036170),
-        Offset(size.width * 0.9961817, size.height * 0.5036170), [
-      monthColors.febColor.withOpacity(1),
-      monthColors.febColor.withOpacity(1)
-    ], [
-      0,
-      1
-    ]);
+    paint_1_fill.color = Color(0xfffafafa).withOpacity(1.0);
     canvas.drawPath(path_1, paint_1_fill);
 
     Path path_2 = Path();
-    path_2.moveTo(size.width * 0.3554970, size.height * 0.5863830);
-    path_2.lineTo(size.width * 0.3843318, size.height * 0.6088298);
-    path_2.lineTo(size.width * 0.3250823, size.height * 0.6586170);
-    path_2.lineTo(size.width * 0.3579987, size.height * 0.6841489);
-    path_2.lineTo(size.width * 0.4036866, size.height * 0.6457447);
-    path_2.lineTo(size.width * 0.4313364, size.height * 0.6670213);
-    path_2.lineTo(size.width * 0.3855168, size.height * 0.7054255);
-    path_2.lineTo(size.width * 0.4462146, size.height * 0.7525532);
-    path_2.lineTo(size.width * 0.4113232, size.height * 0.7819149);
-    path_2.lineTo(size.width * 0.2613562, size.height * 0.6648936);
+    path_2.moveTo(size.width * 0.5613214, size.height * 0.5291438);
+    path_2.lineTo(size.width * 0.5111430, size.height * 0.5665411);
+    path_2.lineTo(size.width * 0.5370430, size.height * 0.5855479);
+    path_2.lineTo(size.width * 0.5930594, size.height * 0.5438014);
+    path_2.lineTo(size.width * 0.6238706, size.height * 0.5663699);
+    path_2.lineTo(size.width * 0.5303711, size.height * 0.6359932);
+    path_2.lineTo(size.width * 0.3897512, size.height * 0.5327740);
+    path_2.lineTo(size.width * 0.4803317, size.height * 0.4653082);
+    path_2.lineTo(size.width * 0.5111430, size.height * 0.4879110);
+    path_2.lineTo(size.width * 0.4579530, size.height * 0.5273973);
+    path_2.lineTo(size.width * 0.4806561, size.height * 0.5440411);
+    path_2.lineTo(size.width * 0.5308345, size.height * 0.5068493);
     path_2.close();
 
     Paint paint_2_fill = Paint()..style = PaintingStyle.fill;
-    paint_2_fill.color = Color(0xffffffff).withOpacity(1.0);
+    paint_2_fill.color = Color(0xfffafafa).withOpacity(1.0);
     canvas.drawPath(path_2, paint_2_fill);
 
     Path path_3 = Path();
-    path_3.moveTo(size.width * 0.4397630, size.height * 0.5638298);
-    path_3.lineTo(size.width * 0.4705727, size.height * 0.5888298);
-    path_3.lineTo(size.width * 0.5204740, size.height * 0.5487234);
-    path_3.lineTo(size.width * 0.5468071, size.height * 0.5700000);
-    path_3.lineTo(size.width * 0.4969059, size.height * 0.6101064);
-    path_3.lineTo(size.width * 0.5294273, size.height * 0.6365957);
-    path_3.lineTo(size.width * 0.5856485, size.height * 0.5914894);
-    path_3.lineTo(size.width * 0.6142199, size.height * 0.6146809);
-    path_3.lineTo(size.width * 0.5220540, size.height * 0.6884043);
-    path_3.lineTo(size.width * 0.3757735, size.height * 0.5694681);
-    path_3.lineTo(size.width * 0.4679394, size.height * 0.4957447);
-    path_3.lineTo(size.width * 0.4961159, size.height * 0.5186170);
+    path_3.moveTo(size.width * 0.5142937, size.height * 0.4428425);
+    path_3.arcToPoint(Offset(size.width * 0.5553908, size.height * 0.4077740),
+        radius:
+            Radius.elliptical(size.width * 0.4265394, size.height * 0.3152740),
+        rotation: 0,
+        largeArc: false,
+        clockwise: true);
+    path_3.cubicTo(
+        size.width * 0.5751286,
+        size.height * 0.3930822,
+        size.width * 0.5885187,
+        size.height * 0.3852055,
+        size.width * 0.6048742,
+        size.height * 0.3811301);
+    path_3.arcToPoint(Offset(size.width * 0.6526433, size.height * 0.3883562),
+        radius: Radius.elliptical(
+            size.width * 0.04415512, size.height * 0.03263699),
+        rotation: 0,
+        largeArc: false,
+        clockwise: true);
+    path_3.cubicTo(
+        size.width * 0.6644581,
+        size.height * 0.3970548,
+        size.width * 0.6696011,
+        size.height * 0.4103082,
+        size.width * 0.6595469,
+        size.height * 0.4268836);
+    path_3.lineTo(size.width * 0.6600565, size.height * 0.4272945);
+    path_3.cubicTo(
+        size.width * 0.6817866,
+        size.height * 0.4179452,
+        size.width * 0.7048140,
+        size.height * 0.4196918,
+        size.width * 0.7215401,
+        size.height * 0.4319521);
+    path_3.arcToPoint(Offset(size.width * 0.7365982, size.height * 0.4661986),
+        radius: Radius.elliptical(
+            size.width * 0.05305101, size.height * 0.03921233),
+        rotation: 0,
+        largeArc: false,
+        clockwise: true);
+    path_3.cubicTo(
+        size.width * 0.7340036,
+        size.height * 0.4798973,
+        size.width * 0.7213548,
+        size.height * 0.4962329,
+        size.width * 0.6913775,
+        size.height * 0.5185274);
+    path_3.arcToPoint(Offset(size.width * 0.6523190, size.height * 0.5442123),
+        radius:
+            Radius.elliptical(size.width * 0.3461984, size.height * 0.2558904),
+        rotation: 0,
+        largeArc: false,
+        clockwise: true);
+    path_3.close();
+    path_3.moveTo(size.width * 0.6035769, size.height * 0.4535959);
+    path_3.lineTo(size.width * 0.6110828, size.height * 0.4480137);
+    path_3.cubicTo(
+        size.width * 0.6268823,
+        size.height * 0.4362329,
+        size.width * 0.6289209,
+        size.height * 0.4264041,
+        size.width * 0.6198397,
+        size.height * 0.4197260);
+    path_3.cubicTo(
+        size.width * 0.6115925,
+        size.height * 0.4136986,
+        size.width * 0.6001483,
+        size.height * 0.4144863,
+        size.width * 0.5874068,
+        size.height * 0.4238356);
+    path_3.arcToPoint(Offset(size.width * 0.5760552, size.height * 0.4335274),
+        radius: Radius.elliptical(
+            size.width * 0.09104388, size.height * 0.06729452),
+        rotation: 0,
+        largeArc: false,
+        clockwise: false);
+    path_3.close();
+    path_3.moveTo(size.width * 0.6638095, size.height * 0.4976712);
+    path_3.arcToPoint(Offset(size.width * 0.6750220, size.height * 0.4899658),
+        radius:
+            Radius.elliptical(size.width * 0.1104573, size.height * 0.08164384),
+        rotation: 0,
+        largeArc: false,
+        clockwise: false);
+    path_3.cubicTo(
+        size.width * 0.6874392,
+        size.height * 0.4806849,
+        size.width * 0.6930455,
+        size.height * 0.4691096,
+        size.width * 0.6806746,
+        size.height * 0.4600342);
+    path_3.cubicTo(
+        size.width * 0.6683038,
+        size.height * 0.4509589,
+        size.width * 0.6533846,
+        size.height * 0.4559932,
+        size.width * 0.6393458,
+        size.height * 0.4664726);
+    path_3.lineTo(size.width * 0.6301256, size.height * 0.4731164);
     path_3.close();
 
     Paint paint_3_fill = Paint()..style = PaintingStyle.fill;
-    paint_3_fill.color = Color(0xffffffff).withOpacity(1.0);
+    paint_3_fill.color = Color(0xfffafafa).withOpacity(1.0);
     canvas.drawPath(path_3, paint_3_fill);
 
     Path path_4 = Path();
-    path_4.moveTo(size.width * 0.6853193, size.height * 0.4614894);
-    path_4.arcToPoint(Offset(size.width * 0.7154707, size.height * 0.4741489),
-        radius: Radius.elliptical(
-            size.width * 0.04963792, size.height * 0.04010638),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
-    path_4.arcToPoint(Offset(size.width * 0.7312706, size.height * 0.5086170),
-        radius: Radius.elliptical(
-            size.width * 0.05266623, size.height * 0.04255319),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
-    path_4.arcToPoint(Offset(size.width * 0.7049375, size.height * 0.5457447),
-        radius: Radius.elliptical(
-            size.width * 0.07676103, size.height * 0.06202128),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
-    path_4.lineTo(size.width * 0.6344964, size.height * 0.5995745);
-    path_4.lineTo(size.width * 0.4909809, size.height * 0.4773404);
-    path_4.lineTo(size.width * 0.5595787, size.height * 0.4248936);
-    path_4.arcToPoint(Offset(size.width * 0.6048716, size.height * 0.4056383),
-        radius: Radius.elliptical(
-            size.width * 0.07755102, size.height * 0.06265957),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
-    path_4.arcToPoint(Offset(size.width * 0.6443713, size.height * 0.4192553),
-        radius: Radius.elliptical(
-            size.width * 0.04753127, size.height * 0.03840426),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
-    path_4.arcToPoint(Offset(size.width * 0.6587228, size.height * 0.4431915),
-        radius: Radius.elliptical(
-            size.width * 0.04832126, size.height * 0.03904255),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
-    path_4.arcToPoint(Offset(size.width * 0.6508229, size.height * 0.4673404),
-        radius: Radius.elliptical(
-            size.width * 0.04634628, size.height * 0.03744681),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
-    path_4.arcToPoint(Offset(size.width * 0.6853193, size.height * 0.4614894),
-        radius: Radius.elliptical(
-            size.width * 0.05266623, size.height * 0.04255319),
-        rotation: 0,
-        largeArc: false,
-        clockwise: true);
-    path_4.close();
-    path_4.moveTo(size.width * 0.5860434, size.height * 0.4993617);
-    path_4.lineTo(size.width * 0.6100066, size.height * 0.4810638);
-    path_4.cubicTo(
-        size.width * 0.6231731,
-        size.height * 0.4713830,
-        size.width * 0.6239631,
-        size.height * 0.4621277,
-        size.width * 0.6136932,
-        size.height * 0.4534043);
-    path_4.cubicTo(
-        size.width * 0.6034233,
-        size.height * 0.4446809,
-        size.width * 0.5924951,
-        size.height * 0.4452128,
-        size.width * 0.5793285,
-        size.height * 0.4551064);
-    path_4.lineTo(size.width * 0.5557604, size.height * 0.4730851);
-    path_4.close();
-    path_4.moveTo(size.width * 0.6732061, size.height * 0.4986170);
-    path_4.arcToPoint(Offset(size.width * 0.6558262, size.height * 0.4924468),
-        radius: Radius.elliptical(
-            size.width * 0.02211982, size.height * 0.01787234),
-        rotation: 0,
-        largeArc: false,
-        clockwise: false);
-    path_4.arcToPoint(Offset(size.width * 0.6362080, size.height * 0.5003191),
-        radius: Radius.elliptical(
-            size.width * 0.03120474, size.height * 0.02521277),
-        rotation: 0,
-        largeArc: false,
-        clockwise: false);
-    path_4.lineTo(size.width * 0.6098749, size.height * 0.5201064);
-    path_4.lineTo(size.width * 0.6420013, size.height * 0.5476596);
-    path_4.lineTo(size.width * 0.6683344, size.height * 0.5276596);
-    path_4.cubicTo(
-        size.width * 0.6821593,
-        size.height * 0.5173404,
-        size.width * 0.6837393,
-        size.height * 0.5076596,
-        size.width * 0.6732061,
-        size.height * 0.4986170);
+    path_4.moveTo(size.width * 0.1176389, size.height * 0.4782534);
+    path_4.lineTo(size.width * 0.3529166, size.height * 0.3260959);
+    path_4.lineTo(size.width * 0.1176389, size.height * 0.2826027);
+    path_4.lineTo(size.width * 0.1176389, size.height * 0.4782534);
     path_4.close();
 
     Paint paint_4_fill = Paint()..style = PaintingStyle.fill;
-    paint_4_fill.color = Color(0xffffffff).withOpacity(1.0);
+    paint_4_fill.color = Color(0xffaeafb1).withOpacity(1.0);
     canvas.drawPath(path_4, paint_4_fill);
   }
 
@@ -2765,7 +2765,7 @@ class Circle1 extends CustomPainter {
     path_0.close();
 
     Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color = Color(0xfff9e1a2).withOpacity(1.0);
+    paint_0_fill.color = monthColors.janColor.withOpacity(1.0);
     canvas.drawPath(path_0, paint_0_fill);
 
     Path path_1 = Path();
@@ -2913,7 +2913,7 @@ class Circle2 extends CustomPainter {
     path_0.close();
 
     Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color = Color(0xffecaa32).withOpacity(1.0);
+    paint_0_fill.color = monthColors.febColor.withOpacity(1.0);
     canvas.drawPath(path_0, paint_0_fill);
 
     Path path_1 = Path();
@@ -3049,7 +3049,7 @@ class Circle3 extends CustomPainter {
     path_0.close();
 
     Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color = Color(0xffed8801).withOpacity(1.0);
+    paint_0_fill.color = monthColors.marColor.withOpacity(1.0);
     canvas.drawPath(path_0, paint_0_fill);
 
     Path path_1 = Path();
@@ -3176,7 +3176,7 @@ class Circle4 extends CustomPainter {
     path_0.close();
 
     Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color = Color(0xffe1453a).withOpacity(1.0);
+    paint_0_fill.color = monthColors.aprColor.withOpacity(1.0);
     canvas.drawPath(path_0, paint_0_fill);
 
     Path path_1 = Path();
@@ -3320,7 +3320,7 @@ class Circle5 extends CustomPainter {
     path_0.close();
 
     Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color = Color(0xffd02f9f).withOpacity(1.0);
+    paint_0_fill.color = monthColors.mayColor.withOpacity(1.0);
     canvas.drawPath(path_0, paint_0_fill);
 
     Path path_1 = Path();
@@ -3451,7 +3451,7 @@ class Circle6 extends CustomPainter {
     path_0.close();
 
     Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color = Color(0xff876ae3).withOpacity(1.0);
+    paint_0_fill.color = monthColors.junColor.withOpacity(1.0);
     canvas.drawPath(path_0, paint_0_fill);
 
     Path path_1 = Path();
@@ -3590,7 +3590,7 @@ class Circle7 extends CustomPainter {
     path_0.close();
 
     Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color = Color(0xff4636a3).withOpacity(1.0);
+    paint_0_fill.color = monthColors.julColor.withOpacity(1.0);
     canvas.drawPath(path_0, paint_0_fill);
 
     Path path_1 = Path();
@@ -3736,7 +3736,7 @@ class Circle8 extends CustomPainter {
     path_0.close();
 
     Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color = Color(0xff0e79c8).withOpacity(1.0);
+    paint_0_fill.color = monthColors.augColor.withOpacity(1.0);
     canvas.drawPath(path_0, paint_0_fill);
 
     Path path_1 = Path();
@@ -3868,7 +3868,7 @@ class Circle9 extends CustomPainter {
     path_0.close();
 
     Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color = Color(0xff00bbdf).withOpacity(1.0);
+    paint_0_fill.color = monthColors.sepColor.withOpacity(1.0);
     canvas.drawPath(path_0, paint_0_fill);
 
     Path path_1 = Path();
@@ -3995,7 +3995,7 @@ class Circle10 extends CustomPainter {
     path_0.close();
 
     Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color = Color(0xff33c089).withOpacity(1.0);
+    paint_0_fill.color = monthColors.octColor.withOpacity(1.0);
     canvas.drawPath(path_0, paint_0_fill);
 
     Path path_1 = Path();
@@ -4125,7 +4125,7 @@ class Circle11 extends CustomPainter {
     path_0.close();
 
     Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color = Color(0xff91c332).withOpacity(1.0);
+    paint_0_fill.color = monthColors.novColor.withOpacity(1.0);
     canvas.drawPath(path_0, paint_0_fill);
 
     Path path_1 = Path();
@@ -4263,7 +4263,7 @@ class Circle12 extends CustomPainter {
     path_0.close();
 
     Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color = Color(0xff9fda0c).withOpacity(1.0);
+    paint_0_fill.color = monthColors.decColor.withOpacity(1.0);
     canvas.drawPath(path_0, paint_0_fill);
 
     Path path_1 = Path();

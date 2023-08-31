@@ -378,7 +378,7 @@ class _speedometerState extends State<speedometer>
 
                       Positioned(
                           bottom: 66,
-                          left: 35,
+                          left: 37,
                           child: Container(
                               width: 250,
                               height: 80,
@@ -681,9 +681,9 @@ class _speedometerState extends State<speedometer>
 
                       Positioned(
                         bottom: 6,
-                        left: 25.8,
+                        left: 28.2,
                         child: Container(
-                          width: 28,
+                          width: 26.7,
                           height: 30,
                           child: GestureDetector(
                             onTap: () {
@@ -707,11 +707,11 @@ class _speedometerState extends State<speedometer>
                       ////feb-btn
 
                       Positioned(
-                        bottom: 28,
-                        left: 45,
+                        bottom: 26,
+                        left: 47,
                         child: Container(
-                          width: 22,
-                          height: 26,
+                          width: 20,
+                          height: 28.5,
                           child: GestureDetector(
                             onTap: () {
                               widget.onClickFeb();
