@@ -1,6 +1,6 @@
 {
-    "name": "custom_widget_speedometer",
-    "short_name": "custom_widget_speedometer",
+    "name": "flutter_speedometer_widget",
+    "short_name": "flutter_speedometer_widget",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

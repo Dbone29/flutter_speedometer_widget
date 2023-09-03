@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "custom_widget_speedometer" "\0"
+            VALUE "FileDescription", "flutter_speedometer_widget" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "custom_widget_speedometer" "\0"
+            VALUE "InternalName", "flutter_speedometer_widget" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "custom_widget_speedometer.exe" "\0"
-            VALUE "ProductName", "custom_widget_speedometer" "\0"
+            VALUE "OriginalFilename", "flutter_speedometer_widget.exe" "\0"
+            VALUE "ProductName", "flutter_speedometer_widget" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
