@@ -1,23 +1,23 @@
-import 'package:custom_widget_speedometer/constants.dart';
-import 'package:custom_widget_speedometer/customPaints.dart';
-import 'package:custom_widget_speedometer/speedometer_animation.dart';
+import 'package:custom_speedometer_widget/constants.dart';
+import 'package:custom_speedometer_widget/custom_paints.dart';
+import 'package:custom_speedometer_widget/speedometer_animation.dart';
 import 'package:flutter/material.dart';
 
-class speedometer extends StatefulWidget {
-  const speedometer({
-    Key? key,
-    required this.isPlaying,
-    required this.isPlaying1,
-    required this.isPlaying2,
-    required this.isPlaying3,
-    required this.isPlaying4,
-    required this.isPlaying5,
-    required this.isPlaying6,
-    required this.isPlaying7,
-    required this.isPlaying8,
-    required this.isPlaying9,
-    required this.isPlaying10,
-    required this.isPlaying11,
+class Speedometer extends StatefulWidget {
+  const Speedometer({
+    super.key,
+    this.isPlaying = false,
+    this.isPlaying1 = false,
+    this.isPlaying2 = false,
+    this.isPlaying3 = false,
+    this.isPlaying4 = false,
+    this.isPlaying5 = false,
+    this.isPlaying6 = false,
+    this.isPlaying7 = false,
+    this.isPlaying8 = false,
+    this.isPlaying9 = false,
+    this.isPlaying10 = false,
+    this.isPlaying11 = false,
     required this.onClickJan,
     required this.onClickFeb,
     required this.onClickMar,
@@ -42,7 +42,7 @@ class speedometer extends StatefulWidget {
     required this.octColor,
     required this.novColor,
     required this.decColor,
-  }) : super(key: key);
+  });
 
   final bool isPlaying;
   final bool isPlaying1;
@@ -84,10 +84,10 @@ class speedometer extends StatefulWidget {
   final void Function() onClickDec;
 
   @override
-  State<speedometer> createState() => _speedometerState();
+  State<Speedometer> createState() => _SpeedometerState();
 }
 
-class _speedometerState extends State<speedometer>
+class _SpeedometerState extends State<Speedometer>
     with TickerProviderStateMixin {
   late AnimationController _controller;
   late AnimationController _controller1;
@@ -122,7 +122,7 @@ class _speedometerState extends State<speedometer>
       vsync: this,
       lowerBound: 0.0,
       upperBound: 1,
-      duration: Duration(milliseconds: 1500),
+      duration: const Duration(milliseconds: 1500),
     );
 
     _speedometerAnimations = SpeedometerAnimations(_controller);
@@ -131,7 +131,7 @@ class _speedometerState extends State<speedometer>
       vsync: this,
       lowerBound: 0.0,
       upperBound: 1,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
     );
 
     _speedometerAnimations1 = SpeedometerAnimations(_controller1);
@@ -140,7 +140,7 @@ class _speedometerState extends State<speedometer>
       vsync: this,
       lowerBound: 0.0,
       upperBound: 1,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
     );
 
     _speedometerAnimations2 = SpeedometerAnimations(_controller2);
@@ -149,7 +149,7 @@ class _speedometerState extends State<speedometer>
       vsync: this,
       lowerBound: 0.0,
       upperBound: 1,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
     );
 
     _speedometerAnimations3 = SpeedometerAnimations(_controller3);
@@ -158,7 +158,7 @@ class _speedometerState extends State<speedometer>
       vsync: this,
       lowerBound: 0.0,
       upperBound: 1,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
     );
 
     _speedometerAnimations4 = SpeedometerAnimations(_controller4);
@@ -167,7 +167,7 @@ class _speedometerState extends State<speedometer>
       vsync: this,
       lowerBound: 0.0,
       upperBound: 1,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
     );
 
     _speedometerAnimations5 = SpeedometerAnimations(_controller5);
@@ -176,7 +176,7 @@ class _speedometerState extends State<speedometer>
       vsync: this,
       lowerBound: 0.0,
       upperBound: 1,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
     );
 
     _speedometerAnimations6 = SpeedometerAnimations(_controller6);
@@ -185,7 +185,7 @@ class _speedometerState extends State<speedometer>
       vsync: this,
       lowerBound: 0.0,
       upperBound: 1,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
     );
 
     _speedometerAnimations7 = SpeedometerAnimations(_controller7);
@@ -194,7 +194,7 @@ class _speedometerState extends State<speedometer>
       vsync: this,
       lowerBound: 0.0,
       upperBound: 1,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
     );
 
     _speedometerAnimations8 = SpeedometerAnimations(_controller8);
@@ -203,7 +203,7 @@ class _speedometerState extends State<speedometer>
       vsync: this,
       lowerBound: 0.0,
       upperBound: 1,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
     );
 
     _speedometerAnimations9 = SpeedometerAnimations(_controller9);
@@ -212,7 +212,7 @@ class _speedometerState extends State<speedometer>
       vsync: this,
       lowerBound: 0.0,
       upperBound: 1,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
     );
 
     _speedometerAnimations10 = SpeedometerAnimations(_controller10);
@@ -221,7 +221,7 @@ class _speedometerState extends State<speedometer>
       vsync: this,
       lowerBound: 0.0,
       upperBound: 1,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
     );
     _speedometerAnimations11 = SpeedometerAnimations(_controller11);
   }
@@ -232,18 +232,18 @@ class _speedometerState extends State<speedometer>
 
   /// triggering animation
   void buttonColors() {
-    monthColors.janColor = widget.janColor;
-    monthColors.febColor = widget.febColor;
-    monthColors.marColor = widget.marColor;
-    monthColors.aprColor = widget.aprColor;
-    monthColors.mayColor = widget.mayColor;
-    monthColors.junColor = widget.junColor;
-    monthColors.julColor = widget.julColor;
-    monthColors.augColor = widget.augColor;
-    monthColors.sepColor = widget.sepColor;
-    monthColors.octColor = widget.octColor;
-    monthColors.novColor = widget.novColor;
-    monthColors.decColor = widget.decColor;
+    MonthColors.janColor = widget.janColor;
+    MonthColors.febColor = widget.febColor;
+    MonthColors.marColor = widget.marColor;
+    MonthColors.aprColor = widget.aprColor;
+    MonthColors.mayColor = widget.mayColor;
+    MonthColors.junColor = widget.junColor;
+    MonthColors.julColor = widget.julColor;
+    MonthColors.augColor = widget.augColor;
+    MonthColors.sepColor = widget.sepColor;
+    MonthColors.octColor = widget.octColor;
+    MonthColors.novColor = widget.novColor;
+    MonthColors.decColor = widget.decColor;
   }
 
   void boolAnimation() {
@@ -354,7 +354,7 @@ class _speedometerState extends State<speedometer>
       children: [
         Align(
           alignment: Alignment.bottomCenter,
-          child: Container(
+          child: SizedBox(
             height: MediaQuery.of(context).size.height / 2,
             width: MediaQuery.of(context).size.width,
             child: Align(
@@ -363,7 +363,7 @@ class _speedometerState extends State<speedometer>
                 alignment: Alignment.bottomCenter,
                 transform: Matrix4.identity()
                   ..scale(scaleFactor, scaleFactor, 1.0),
-                child: Container(
+                child: SizedBox(
                   width: 320,
                   height: 120,
                   // color: Colors.black,
@@ -374,7 +374,7 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                           bottom: 66,
                           left: 37,
-                          child: Container(
+                          child: SizedBox(
                               width: 250,
                               height: 80,
                               child: CustomPaint(
@@ -389,7 +389,7 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         right: 2,
                         bottom: 2,
-                        child: Container(
+                        child: SizedBox(
                           width: 320,
                           // height: 100,
                           child: CustomPaint(
@@ -406,12 +406,12 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 23,
                         left: 9,
-                        child: Container(
+                        child: SizedBox(
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations?.buildAnimationBody(
-                              monthColors.janColor,
-                              Container(
+                              MonthColors.janColor,
+                              SizedBox(
                                 width: 12,
                                 height: 12,
                                 child: CustomPaint(
@@ -428,12 +428,12 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 48,
                         left: 31,
-                        child: Container(
+                        child: SizedBox(
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations1?.buildAnimationBody(
-                              monthColors.febColor,
-                              Container(
+                              MonthColors.febColor,
+                              SizedBox(
                                 width: 12,
                                 height: 12,
                                 child: CustomPaint(
@@ -451,12 +451,12 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 69,
                         left: 58,
-                        child: Container(
+                        child: SizedBox(
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations2?.buildAnimationBody(
-                              monthColors.marColor,
-                              Container(
+                              MonthColors.marColor,
+                              SizedBox(
                                 width: 12,
                                 height: 12,
                                 child: CustomPaint(
@@ -475,12 +475,12 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 83,
                         left: 85,
-                        child: Container(
+                        child: SizedBox(
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations3?.buildAnimationBody(
-                              monthColors.aprColor,
-                              Container(
+                              MonthColors.aprColor,
+                              SizedBox(
                                 width: 12,
                                 height: 12,
                                 child: CustomPaint(
@@ -498,12 +498,12 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 92,
                         left: 112,
-                        child: Container(
+                        child: SizedBox(
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations4?.buildAnimationBody(
-                              monthColors.mayColor,
-                              Container(
+                              MonthColors.mayColor,
+                              SizedBox(
                                 width: 12,
                                 height: 12,
                                 child: CustomPaint(
@@ -520,12 +520,12 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 96,
                         left: 140,
-                        child: Container(
+                        child: SizedBox(
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations5?.buildAnimationBody(
-                              monthColors.junColor,
-                              Container(
+                              MonthColors.junColor,
+                              SizedBox(
                                 width: 12,
                                 height: 12,
                                 child: CustomPaint(
@@ -542,12 +542,12 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 96,
                         left: 165,
-                        child: Container(
+                        child: SizedBox(
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations6?.buildAnimationBody(
-                              monthColors.julColor,
-                              Container(
+                              MonthColors.julColor,
+                              SizedBox(
                                 width: 12,
                                 height: 12,
                                 child: CustomPaint(
@@ -564,12 +564,12 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 92,
                         left: 193,
-                        child: Container(
+                        child: SizedBox(
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations7?.buildAnimationBody(
-                              monthColors.augColor,
-                              Container(
+                              MonthColors.augColor,
+                              SizedBox(
                                 width: 12,
                                 height: 12,
                                 child: CustomPaint(
@@ -586,12 +586,12 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 83,
                         left: 219,
-                        child: Container(
+                        child: SizedBox(
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations8?.buildAnimationBody(
-                              monthColors.sepColor,
-                              Container(
+                              MonthColors.sepColor,
+                              SizedBox(
                                 width: 12,
                                 height: 12,
                                 child: CustomPaint(
@@ -608,12 +608,12 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 70,
                         left: 245,
-                        child: Container(
+                        child: SizedBox(
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations9?.buildAnimationBody(
-                              monthColors.octColor,
-                              Container(
+                              MonthColors.octColor,
+                              SizedBox(
                                 width: 12,
                                 height: 12,
                                 child: CustomPaint(
@@ -632,12 +632,12 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 49,
                         left: 272,
-                        child: Container(
+                        child: SizedBox(
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations10?.buildAnimationBody(
-                              monthColors.novColor,
-                              Container(
+                              MonthColors.novColor,
+                              SizedBox(
                                 width: 12,
                                 height: 12,
                                 child: CustomPaint(
@@ -654,12 +654,12 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 22,
                         left: 293,
-                        child: Container(
+                        child: SizedBox(
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations11?.buildAnimationBody(
-                              monthColors.decColor,
-                              Container(
+                              MonthColors.decColor,
+                              SizedBox(
                                 width: 12,
                                 height: 12,
                                 child: CustomPaint(
@@ -677,7 +677,7 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 6,
                         left: 28.2,
-                        child: Container(
+                        child: SizedBox(
                           width: 26.7,
                           height: 30,
                           child: GestureDetector(
@@ -704,7 +704,7 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 22,
                         left: 47,
-                        child: Container(
+                        child: SizedBox(
                           width: 20,
                           height: 32,
                           child: GestureDetector(
@@ -730,7 +730,7 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 41.2,
                         left: 66,
-                        child: Container(
+                        child: SizedBox(
                           width: 24,
                           height: 29,
                           child: GestureDetector(
@@ -756,7 +756,7 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 57.2,
                         left: 86.5,
-                        child: Container(
+                        child: SizedBox(
                           width: 28,
                           height: 23,
                           child: GestureDetector(
@@ -782,7 +782,7 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 69.4,
                         left: 113.5,
-                        child: Container(
+                        child: SizedBox(
                           width: 24,
                           height: 19,
                           child: GestureDetector(
@@ -808,7 +808,7 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 75.5,
                         left: 137.3,
-                        child: Container(
+                        child: SizedBox(
                           width: 23.5,
                           height: 17,
                           child: GestureDetector(
@@ -834,7 +834,7 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 75.3,
                         left: 160.3,
-                        child: Container(
+                        child: SizedBox(
                           width: 25,
                           height: 17,
                           child: GestureDetector(
@@ -860,7 +860,7 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 69,
                         left: 185,
-                        child: Container(
+                        child: SizedBox(
                           width: 23,
                           height: 19.3,
                           child: GestureDetector(
@@ -886,7 +886,7 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 58.5,
                         left: 207.5,
-                        child: Container(
+                        child: SizedBox(
                           width: 23,
                           height: 22,
                           child: GestureDetector(
@@ -912,7 +912,7 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 41.4,
                         left: 230.5,
-                        child: Container(
+                        child: SizedBox(
                           width: 24,
                           height: 28,
                           child: GestureDetector(
@@ -938,7 +938,7 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 13.6,
                         left: 254.5,
-                        child: Container(
+                        child: SizedBox(
                           width: 25,
                           height: 40.5,
                           child: GestureDetector(
@@ -965,7 +965,7 @@ class _speedometerState extends State<speedometer>
                       Positioned(
                         bottom: 5,
                         left: 279,
-                        child: Container(
+                        child: SizedBox(
                           width: 16,
                           height: 26,
                           child: GestureDetector(

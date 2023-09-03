@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SpeedometerAnimations {
-  AnimationController _controller;
+  final AnimationController _controller;
 
   SpeedometerAnimations(AnimationController controller)
       : _controller = controller;
