@@ -18,6 +18,18 @@ class Speedometer extends StatefulWidget {
     this.isPlaying9 = false,
     this.isPlaying10 = false,
     this.isPlaying11 = false,
+    this.janColor = const Color(0x00FFECA6),
+    this.febColor = const Color(0x00FFA200),
+    this.marColor = const Color(0x00F7B23A),
+    this.aprColor = const Color(0x00dd8479),
+    this.mayColor = const Color(0x00ea4ec9),
+    this.junColor = const Color(0x00bb53d4),
+    this.julColor = const Color(0x008d6bed),
+    this.augColor = const Color(0x0053abf4),
+    this.sepColor = const Color(0x0018def7),
+    this.octColor = const Color(0x005ae8a2),
+    this.novColor = const Color(0x00a6e900),
+    this.decColor = const Color(0x00b0e214),
     required this.onClickJan,
     required this.onClickFeb,
     required this.onClickMar,
@@ -30,18 +42,6 @@ class Speedometer extends StatefulWidget {
     required this.onClickOct,
     required this.onClickNov,
     required this.onClickDec,
-    required this.janColor,
-    required this.febColor,
-    required this.marColor,
-    required this.aprColor,
-    required this.mayColor,
-    required this.junColor,
-    required this.julColor,
-    required this.augColor,
-    required this.sepColor,
-    required this.octColor,
-    required this.novColor,
-    required this.decColor,
   });
 
   final bool isPlaying;
@@ -232,7 +232,6 @@ class _SpeedometerState extends State<Speedometer>
 
   /// triggering animation
   void buttonColors() {
-    MonthColors.janColor = widget.janColor;
     MonthColors.febColor = widget.febColor;
     MonthColors.marColor = widget.marColor;
     MonthColors.aprColor = widget.aprColor;
@@ -410,7 +409,7 @@ class _SpeedometerState extends State<Speedometer>
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations?.buildAnimationBody(
-                              MonthColors.janColor,
+                              widget.janColor,
                               SizedBox(
                                 width: 12,
                                 height: 12,
@@ -419,7 +418,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: Circle1(),
+                                  painter: Circle1(widget.janColor),
                                 ),
                               )),
                         ),
@@ -692,7 +691,7 @@ class _SpeedometerState extends State<Speedometer>
                                     100,
                                     (100 * 1.0539226769161203)
                                         .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                painter: January(),
+                                painter: January(color: widget.janColor),
                               ),
                             ),
                           ),

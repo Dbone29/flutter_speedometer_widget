@@ -7,6 +7,10 @@ import 'package:flutter/material.dart';
 
 //Copy this CustomPainter code to the Bottom of the File
 class January extends CustomPainter {
+  const January({required this.color});
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -38,7 +42,7 @@ class January extends CustomPainter {
     path_1.close();
 
     Paint paint1Fill = Paint()..style = PaintingStyle.fill;
-    paint1Fill.color = MonthColors.janColor.withOpacity(1.0);
+    paint1Fill.color = color.withOpacity(1.0);
     canvas.drawPath(path_1, paint1Fill);
 
     Path path_2 = Path();
@@ -2681,6 +2685,10 @@ class ArcOutline extends CustomPainter {
 ///
 
 class Circle1 extends CustomPainter {
+  const Circle1(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -2765,7 +2773,7 @@ class Circle1 extends CustomPainter {
     path_0.close();
 
     Paint paint0Fill = Paint()..style = PaintingStyle.fill;
-    paint0Fill.color = MonthColors.janColor.withOpacity(1.0);
+    paint0Fill.color = color.withOpacity(1.0);
     canvas.drawPath(path_0, paint0Fill);
 
     Path path_1 = Path();

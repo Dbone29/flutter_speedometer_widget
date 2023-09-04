@@ -3,9 +3,8 @@
 import 'package:flutter/material.dart';
 
 class MonthColors {
-  static var janColor = const Color.fromARGB(255, 255, 236, 166);
-  static var febColor = const Color.fromARGB(255, 255, 162, 0);
-  static var marColor = const Color.fromARGB(255, 247, 178, 58);
+  static var febColor = const Color(0x00FFA200);
+  static var marColor = const Color(0x00F7B23A);
   static var aprColor = const Color(0x00dd8479);
   static var mayColor = const Color(0x00ea4ec9);
   static var junColor = const Color(0x00bb53d4);
