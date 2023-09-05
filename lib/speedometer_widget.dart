@@ -1,4 +1,3 @@
-import 'package:custom_speedometer_widget/constants.dart';
 import 'package:custom_speedometer_widget/custom_paints.dart';
 import 'package:custom_speedometer_widget/speedometer_animation.dart';
 import 'package:flutter/material.dart';
@@ -230,21 +229,6 @@ class _SpeedometerState extends State<Speedometer>
     ctn.forward(from: 0.0);
   }
 
-  /// triggering animation
-  void buttonColors() {
-    MonthColors.febColor = widget.febColor;
-    MonthColors.marColor = widget.marColor;
-    MonthColors.aprColor = widget.aprColor;
-    MonthColors.mayColor = widget.mayColor;
-    MonthColors.junColor = widget.junColor;
-    MonthColors.julColor = widget.julColor;
-    MonthColors.augColor = widget.augColor;
-    MonthColors.sepColor = widget.sepColor;
-    MonthColors.octColor = widget.octColor;
-    MonthColors.novColor = widget.novColor;
-    MonthColors.decColor = widget.decColor;
-  }
-
   void boolAnimation() {
     if (widget.isPlaying) {
       _controller.repeat();
@@ -334,7 +318,6 @@ class _SpeedometerState extends State<Speedometer>
   @override
   Widget build(BuildContext context) {
     boolAnimation();
-    buttonColors();
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
 
@@ -431,7 +414,7 @@ class _SpeedometerState extends State<Speedometer>
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations1?.buildAnimationBody(
-                              MonthColors.febColor,
+                              widget.febColor,
                               SizedBox(
                                 width: 12,
                                 height: 12,
@@ -440,7 +423,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: Circle2(),
+                                  painter: Circle2(widget.febColor),
                                 ),
                               )),
                         ),
@@ -454,7 +437,7 @@ class _SpeedometerState extends State<Speedometer>
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations2?.buildAnimationBody(
-                              MonthColors.marColor,
+                              widget.marColor,
                               SizedBox(
                                 width: 12,
                                 height: 12,
@@ -463,7 +446,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: Circle3(),
+                                  painter: Circle3(widget.marColor),
                                 ),
                               )),
                         ),
@@ -478,7 +461,7 @@ class _SpeedometerState extends State<Speedometer>
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations3?.buildAnimationBody(
-                              MonthColors.aprColor,
+                              widget.aprColor,
                               SizedBox(
                                 width: 12,
                                 height: 12,
@@ -487,7 +470,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: Circle4(),
+                                  painter: Circle4(widget.aprColor),
                                 ),
                               )),
                         ),
@@ -501,7 +484,7 @@ class _SpeedometerState extends State<Speedometer>
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations4?.buildAnimationBody(
-                              MonthColors.mayColor,
+                              widget.mayColor,
                               SizedBox(
                                 width: 12,
                                 height: 12,
@@ -510,7 +493,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: Circle5(),
+                                  painter: Circle5(widget.mayColor),
                                 ),
                               )),
                         ),
@@ -523,7 +506,7 @@ class _SpeedometerState extends State<Speedometer>
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations5?.buildAnimationBody(
-                              MonthColors.junColor,
+                              widget.junColor,
                               SizedBox(
                                 width: 12,
                                 height: 12,
@@ -532,7 +515,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: Circle6(),
+                                  painter: Circle6(widget.junColor),
                                 ),
                               )),
                         ),
@@ -545,7 +528,7 @@ class _SpeedometerState extends State<Speedometer>
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations6?.buildAnimationBody(
-                              MonthColors.julColor,
+                              widget.julColor,
                               SizedBox(
                                 width: 12,
                                 height: 12,
@@ -554,7 +537,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: Circle7(),
+                                  painter: Circle7(widget.julColor),
                                 ),
                               )),
                         ),
@@ -567,7 +550,7 @@ class _SpeedometerState extends State<Speedometer>
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations7?.buildAnimationBody(
-                              MonthColors.augColor,
+                              widget.augColor,
                               SizedBox(
                                 width: 12,
                                 height: 12,
@@ -576,7 +559,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: Circle8(),
+                                  painter: Circle8(widget.augColor),
                                 ),
                               )),
                         ),
@@ -589,7 +572,7 @@ class _SpeedometerState extends State<Speedometer>
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations8?.buildAnimationBody(
-                              MonthColors.sepColor,
+                              widget.sepColor,
                               SizedBox(
                                 width: 12,
                                 height: 12,
@@ -598,7 +581,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: Circle9(),
+                                  painter: Circle9(widget.sepColor),
                                 ),
                               )),
                         ),
@@ -611,7 +594,7 @@ class _SpeedometerState extends State<Speedometer>
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations9?.buildAnimationBody(
-                              MonthColors.octColor,
+                              widget.octColor,
                               SizedBox(
                                 width: 12,
                                 height: 12,
@@ -620,7 +603,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: Circle10(),
+                                  painter: Circle10(widget.octColor),
                                 ),
                               )),
                         ),
@@ -635,7 +618,7 @@ class _SpeedometerState extends State<Speedometer>
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations10?.buildAnimationBody(
-                              MonthColors.novColor,
+                              widget.novColor,
                               SizedBox(
                                 width: 12,
                                 height: 12,
@@ -644,7 +627,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: Circle11(),
+                                  painter: Circle11(widget.novColor),
                                 ),
                               )),
                         ),
@@ -657,7 +640,7 @@ class _SpeedometerState extends State<Speedometer>
                           width: 20,
                           height: 20,
                           child: _speedometerAnimations11?.buildAnimationBody(
-                              MonthColors.decColor,
+                              widget.decColor,
                               SizedBox(
                                 width: 12,
                                 height: 12,
@@ -666,7 +649,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: Circle12(),
+                                  painter: Circle12(widget.decColor),
                                 ),
                               )),
                         ),
@@ -691,7 +674,7 @@ class _SpeedometerState extends State<Speedometer>
                                     100,
                                     (100 * 1.0539226769161203)
                                         .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                painter: January(color: widget.janColor),
+                                painter: January(widget.janColor),
                               ),
                             ),
                           ),
@@ -718,7 +701,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: Febuary()),
+                                  painter: Febuary(widget.febColor)),
                             ),
                           ),
                         ),
@@ -744,7 +727,7 @@ class _SpeedometerState extends State<Speedometer>
                                       180,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: March()),
+                                  painter: March(widget.marColor)),
                             ),
                           ),
                         ),
@@ -770,7 +753,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: April()),
+                                  painter: April(widget.aprColor)),
                             ),
                           ),
                         ),
@@ -796,7 +779,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: May()),
+                                  painter: May(widget.mayColor)),
                             ),
                           ),
                         ),
@@ -822,7 +805,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: June()),
+                                  painter: June(widget.junColor)),
                             ),
                           ),
                         ),
@@ -848,7 +831,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: July()),
+                                  painter: July(widget.julColor)),
                             ),
                           ),
                         ),
@@ -874,7 +857,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: Aug()),
+                                  painter: Aug(widget.augColor)),
                             ),
                           ),
                         ),
@@ -900,7 +883,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: Sep()),
+                                  painter: Sep(widget.sepColor)),
                             ),
                           ),
                         ),
@@ -926,7 +909,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: Oct()),
+                                  painter: Oct(widget.octColor)),
                             ),
                           ),
                         ),
@@ -952,7 +935,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: Nov()),
+                                  painter: Nov(widget.novColor)),
                             ),
                           ),
                         ),
@@ -979,7 +962,7 @@ class _SpeedometerState extends State<Speedometer>
                                       100,
                                       (100 * 1.0539226769161203)
                                           .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                                  painter: Dec()),
+                                  painter: Dec(widget.decColor)),
                             ),
                           ),
                         ),

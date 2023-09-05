@@ -1,13 +1,12 @@
 import 'dart:ui' as ui;
 
-import 'package:custom_speedometer_widget/constants.dart';
 import 'package:flutter/material.dart';
 
 //Add this CustomPaint widget to the Widget Tree
 
 //Copy this CustomPainter code to the Bottom of the File
 class January extends CustomPainter {
-  const January({required this.color});
+  const January(this.color);
 
   final Color color;
 
@@ -138,6 +137,10 @@ class January extends CustomPainter {
 
 //Copy this CustomPainter code to the Bottom of the File
 class Febuary extends CustomPainter {
+  const Febuary(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -326,6 +329,10 @@ class Febuary extends CustomPainter {
 }
 
 class March extends CustomPainter {
+  const March(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -361,13 +368,9 @@ class March extends CustomPainter {
     Paint paint1Fill = Paint()..style = PaintingStyle.fill;
     paint1Fill.shader = ui.Gradient.linear(
         Offset(size.width * 0.6475260, size.height * 0.5193617),
-        Offset(size.width * 1.006475, size.height * 0.5193617), [
-      MonthColors.marColor.withOpacity(1),
-      MonthColors.marColor.withOpacity(1)
-    ], [
-      0,
-      1
-    ]);
+        Offset(size.width * 1.006475, size.height * 0.5193617),
+        [color.withOpacity(1), color.withOpacity(1)],
+        [0, 1]);
     canvas.drawPath(path_1, paint1Fill);
 
     Path path_2 = Path();
@@ -538,6 +541,10 @@ class March extends CustomPainter {
 
 //Copy this CustomPainter code to the Bottom of the File
 class April extends CustomPainter {
+  const April(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -570,7 +577,7 @@ class April extends CustomPainter {
     path_1.close();
 
     Paint paint1Fill = Paint()..style = PaintingStyle.fill;
-    paint1Fill.color = MonthColors.aprColor.withOpacity(1.0);
+    paint1Fill.color = color.withOpacity(1.0);
     canvas.drawPath(path_1, paint1Fill);
 
     Path path_2 = Path();
@@ -733,6 +740,10 @@ class April extends CustomPainter {
 
 //Copy this CustomPainter code to the Bottom of the File
 class May extends CustomPainter {
+  const May(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -756,13 +767,9 @@ class May extends CustomPainter {
     Paint paint0Fill = Paint()..style = PaintingStyle.fill;
     paint0Fill.shader = ui.Gradient.linear(
         Offset(size.width * -0.05747126, size.height * 0.5995835),
-        Offset(size.width * 0.9994253, size.height * 0.5995835), [
-      MonthColors.mayColor.withOpacity(1),
-      MonthColors.mayColor.withOpacity(1)
-    ], [
-      0,
-      1
-    ]);
+        Offset(size.width * 0.9994253, size.height * 0.5995835),
+        [color.withOpacity(1), color.withOpacity(1)],
+        [0, 1]);
     canvas.drawPath(path_0, paint0Fill);
 
     Path path_1 = Path();
@@ -843,6 +850,10 @@ class May extends CustomPainter {
 ///
 
 class June extends CustomPainter {
+  const June(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -877,13 +888,9 @@ class June extends CustomPainter {
     Paint paint1Fill = Paint()..style = PaintingStyle.fill;
     paint1Fill.shader = ui.Gradient.linear(
         Offset(size.width * 0.2080203, size.height * 0.6750000),
-        Offset(size.width * 1.002196, size.height * 0.6750000), [
-      MonthColors.junColor.withOpacity(1),
-      MonthColors.junColor.withOpacity(1)
-    ], [
-      0,
-      1
-    ]);
+        Offset(size.width * 1.002196, size.height * 0.6750000),
+        [color.withOpacity(1), color.withOpacity(1)],
+        [0, 1]);
     canvas.drawPath(path_1, paint1Fill);
 
     Path path_2 = Path();
@@ -1032,6 +1039,10 @@ class June extends CustomPainter {
 
 //Copy this CustomPainter code to the Bottom of the File
 class July extends CustomPainter {
+  const July(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -1066,13 +1077,9 @@ class July extends CustomPainter {
     Paint paint1Fill = Paint()..style = PaintingStyle.fill;
     paint1Fill.shader = ui.Gradient.linear(
         Offset(size.width * 1.117647, size.height * 0.6618390),
-        Offset(size.width * 1.011176, size.height * 0.6618390), [
-      MonthColors.julColor.withOpacity(1),
-      MonthColors.julColor.withOpacity(1)
-    ], [
-      0,
-      1
-    ]);
+        Offset(size.width * 1.011176, size.height * 0.6618390),
+        [color.withOpacity(1), color.withOpacity(1)],
+        [0, 1]);
     canvas.drawPath(path_1, paint1Fill);
 
     Path path_2 = Path();
@@ -1209,6 +1216,10 @@ class July extends CustomPainter {
 ///
 ///
 class Aug extends CustomPainter {
+  const Aug(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -1243,13 +1254,9 @@ class Aug extends CustomPainter {
     Paint paint1Fill = Paint()..style = PaintingStyle.fill;
     paint1Fill.shader = ui.Gradient.linear(
         Offset(size.width * 1.351333, size.height * 1.398029),
-        Offset(size.width * 0.3880000, size.height * 0.4616669), [
-      MonthColors.augColor.withOpacity(1),
-      MonthColors.augColor.withOpacity(1)
-    ], [
-      0,
-      1
-    ]);
+        Offset(size.width * 0.3880000, size.height * 0.4616669),
+        [color.withOpacity(1), color.withOpacity(1)],
+        [0, 1]);
     canvas.drawPath(path_1, paint1Fill);
 
     Path path_2 = Path();
@@ -1465,6 +1472,10 @@ class Aug extends CustomPainter {
 ///
 ///
 class Sep extends CustomPainter {
+  const Sep(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -1499,13 +1510,9 @@ class Sep extends CustomPainter {
     Paint paint1Fill = Paint()..style = PaintingStyle.fill;
     paint1Fill.shader = ui.Gradient.linear(
         Offset(size.width * 1.461538, size.height * 0.5316984),
-        Offset(size.width * 1.014615, size.height * 0.5316984), [
-      MonthColors.sepColor.withOpacity(1),
-      MonthColors.sepColor.withOpacity(1)
-    ], [
-      0,
-      1
-    ]);
+        Offset(size.width * 1.014615, size.height * 0.5316984),
+        [color.withOpacity(1), color.withOpacity(1)],
+        [0, 1]);
     canvas.drawPath(path_1, paint1Fill);
 
     Path path_2 = Path();
@@ -1787,6 +1794,10 @@ class Sep extends CustomPainter {
 ///
 
 class Oct extends CustomPainter {
+  const Oct(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -1820,13 +1831,9 @@ class Oct extends CustomPainter {
     Paint paint1Fill = Paint()..style = PaintingStyle.fill;
     paint1Fill.shader = ui.Gradient.linear(
         Offset(size.width * 0.9272727, size.height * 1.105900),
-        Offset(size.width * 0.4361093, size.height * 0.3614353), [
-      MonthColors.octColor.withOpacity(1),
-      MonthColors.octColor.withOpacity(1)
-    ], [
-      0,
-      1
-    ]);
+        Offset(size.width * 0.4361093, size.height * 0.3614353),
+        [color.withOpacity(1), color.withOpacity(1)],
+        [0, 1]);
     canvas.drawPath(path_1, paint1Fill);
 
     Path path_2 = Path();
@@ -2067,6 +2074,10 @@ class Oct extends CustomPainter {
 ///
 ///
 class Nov extends CustomPainter {
+  const Nov(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -2101,13 +2112,9 @@ class Nov extends CustomPainter {
     Paint paint1Fill = Paint()..style = PaintingStyle.fill;
     paint1Fill.shader = ui.Gradient.linear(
         Offset(size.width * 0.8440475, size.height * 1.096131),
-        Offset(size.width * 0.1386100, size.height * -24.34008), [
-      MonthColors.novColor.withOpacity(1),
-      MonthColors.novColor.withOpacity(1)
-    ], [
-      0,
-      1
-    ]);
+        Offset(size.width * 0.1386100, size.height * -24.34008),
+        [color.withOpacity(1), color.withOpacity(1)],
+        [0, 1]);
     canvas.drawPath(path_1, paint1Fill);
 
     Path path_2 = Path();
@@ -2246,6 +2253,10 @@ class Nov extends CustomPainter {
 ///
 
 class Dec extends CustomPainter {
+  const Dec(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -2276,13 +2287,9 @@ class Dec extends CustomPainter {
     Paint paint1Fill = Paint()..style = PaintingStyle.fill;
     paint1Fill.shader = ui.Gradient.linear(
         Offset(size.width * 1.693653, size.height * 0.5185600),
-        Offset(size.width * 1.016937, size.height * 0.5185600), [
-      MonthColors.decColor.withOpacity(1),
-      MonthColors.decColor.withOpacity(1)
-    ], [
-      0,
-      1
-    ]);
+        Offset(size.width * 1.016937, size.height * 0.5185600),
+        [color.withOpacity(1), color.withOpacity(1)],
+        [0, 1]);
     canvas.drawPath(path_1, paint1Fill);
 
     Path path_2 = Path();
@@ -2839,6 +2846,10 @@ class Circle1 extends CustomPainter {
 ///
 ///
 class Circle2 extends CustomPainter {
+  const Circle2(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -2921,7 +2932,7 @@ class Circle2 extends CustomPainter {
     path_0.close();
 
     Paint paint0Fill = Paint()..style = PaintingStyle.fill;
-    paint0Fill.color = MonthColors.febColor.withOpacity(1.0);
+    paint0Fill.color = color.withOpacity(1.0);
     canvas.drawPath(path_0, paint0Fill);
 
     Path path_1 = Path();
@@ -2981,6 +2992,10 @@ class Circle2 extends CustomPainter {
 /// Circle3
 ///
 class Circle3 extends CustomPainter {
+  const Circle3(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -3057,7 +3072,7 @@ class Circle3 extends CustomPainter {
     path_0.close();
 
     Paint paint0Fill = Paint()..style = PaintingStyle.fill;
-    paint0Fill.color = MonthColors.marColor.withOpacity(1.0);
+    paint0Fill.color = color.withOpacity(1.0);
     canvas.drawPath(path_0, paint0Fill);
 
     Path path_1 = Path();
@@ -3112,6 +3127,10 @@ class Circle3 extends CustomPainter {
 ///
 ///
 class Circle4 extends CustomPainter {
+  const Circle4(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -3184,7 +3203,7 @@ class Circle4 extends CustomPainter {
     path_0.close();
 
     Paint paint0Fill = Paint()..style = PaintingStyle.fill;
-    paint0Fill.color = MonthColors.aprColor.withOpacity(1.0);
+    paint0Fill.color = color.withOpacity(1.0);
     canvas.drawPath(path_0, paint0Fill);
 
     Path path_1 = Path();
@@ -3244,6 +3263,10 @@ class Circle4 extends CustomPainter {
 ///
 
 class Circle5 extends CustomPainter {
+  const Circle5(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -3328,7 +3351,7 @@ class Circle5 extends CustomPainter {
     path_0.close();
 
     Paint paint0Fill = Paint()..style = PaintingStyle.fill;
-    paint0Fill.color = MonthColors.mayColor.withOpacity(1.0);
+    paint0Fill.color = color.withOpacity(1.0);
     canvas.drawPath(path_0, paint0Fill);
 
     Path path_1 = Path();
@@ -3388,6 +3411,10 @@ class Circle5 extends CustomPainter {
 ///
 
 class Circle6 extends CustomPainter {
+  const Circle6(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -3459,7 +3486,7 @@ class Circle6 extends CustomPainter {
     path_0.close();
 
     Paint paint0Fill = Paint()..style = PaintingStyle.fill;
-    paint0Fill.color = MonthColors.junColor.withOpacity(1.0);
+    paint0Fill.color = color.withOpacity(1.0);
     canvas.drawPath(path_0, paint0Fill);
 
     Path path_1 = Path();
@@ -3515,6 +3542,10 @@ class Circle6 extends CustomPainter {
 ///
 ///
 class Circle7 extends CustomPainter {
+  const Circle7(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -3598,7 +3629,7 @@ class Circle7 extends CustomPainter {
     path_0.close();
 
     Paint paint0Fill = Paint()..style = PaintingStyle.fill;
-    paint0Fill.color = MonthColors.julColor.withOpacity(1.0);
+    paint0Fill.color = color.withOpacity(1.0);
     canvas.drawPath(path_0, paint0Fill);
 
     Path path_1 = Path();
@@ -3660,6 +3691,10 @@ class Circle7 extends CustomPainter {
 ///
 ///
 class Circle8 extends CustomPainter {
+  const Circle8(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -3744,7 +3779,7 @@ class Circle8 extends CustomPainter {
     path_0.close();
 
     Paint paint0Fill = Paint()..style = PaintingStyle.fill;
-    paint0Fill.color = MonthColors.augColor.withOpacity(1.0);
+    paint0Fill.color = color.withOpacity(1.0);
     canvas.drawPath(path_0, paint0Fill);
 
     Path path_1 = Path();
@@ -3800,6 +3835,10 @@ class Circle8 extends CustomPainter {
 ///
 ///
 class Circle9 extends CustomPainter {
+  const Circle9(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -3876,7 +3915,7 @@ class Circle9 extends CustomPainter {
     path_0.close();
 
     Paint paint0Fill = Paint()..style = PaintingStyle.fill;
-    paint0Fill.color = MonthColors.sepColor.withOpacity(1.0);
+    paint0Fill.color = color.withOpacity(1.0);
     canvas.drawPath(path_0, paint0Fill);
 
     Path path_1 = Path();
@@ -3926,6 +3965,10 @@ class Circle9 extends CustomPainter {
 ///
 
 class Circle10 extends CustomPainter {
+  const Circle10(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -4003,7 +4046,7 @@ class Circle10 extends CustomPainter {
     path_0.close();
 
     Paint paint0Fill = Paint()..style = PaintingStyle.fill;
-    paint0Fill.color = MonthColors.octColor.withOpacity(1.0);
+    paint0Fill.color = color.withOpacity(1.0);
     canvas.drawPath(path_0, paint0Fill);
 
     Path path_1 = Path();
@@ -4055,6 +4098,10 @@ class Circle10 extends CustomPainter {
 ///
 
 class Circle11 extends CustomPainter {
+  const Circle11(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -4133,7 +4180,7 @@ class Circle11 extends CustomPainter {
     path_0.close();
 
     Paint paint0Fill = Paint()..style = PaintingStyle.fill;
-    paint0Fill.color = MonthColors.novColor.withOpacity(1.0);
+    paint0Fill.color = color.withOpacity(1.0);
     canvas.drawPath(path_0, paint0Fill);
 
     Path path_1 = Path();
@@ -4189,6 +4236,10 @@ class Circle11 extends CustomPainter {
 ///
 ///
 class Circle12 extends CustomPainter {
+  const Circle12(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -4271,7 +4322,7 @@ class Circle12 extends CustomPainter {
     path_0.close();
 
     Paint paint0Fill = Paint()..style = PaintingStyle.fill;
-    paint0Fill.color = MonthColors.decColor.withOpacity(1.0);
+    paint0Fill.color = color.withOpacity(1.0);
     canvas.drawPath(path_0, paint0Fill);
 
     Path path_1 = Path();
